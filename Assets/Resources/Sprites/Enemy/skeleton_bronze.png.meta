@@ -1,103 +1,127 @@
 fileFormatVersion: 2
-guid: 4ee2c981b19ad7d4793eaf372ade69b0
+guid: af7b0be3697ccf34082aa1fe0319d98a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9198426204101478771
-    second: spr bo player anim at and move_0
+      213: 6112013490801242304
+    second: skeleton_bronze_0
   - first:
-      213: -907421191412132491
-    second: spr bo player anim at and move_1
+      213: -3634413189553798150
+    second: skeleton_bronze_1
   - first:
-      213: -6978087248785125163
-    second: spr bo player anim at and move_2
+      213: -2718377638173313888
+    second: skeleton_bronze_2
   - first:
-      213: 6112672881024672935
-    second: spr bo player anim at and move_3
+      213: -4656791990193818255
+    second: skeleton_bronze_3
   - first:
-      213: -1103546374534909986
-    second: spr bo player anim at and move_4
+      213: 8767488282094114157
+    second: skeleton_bronze_4
   - first:
-      213: -663441050389949146
-    second: spr bo player anim at and move_5
+      213: 5172662771969177381
+    second: skeleton_bronze_5
   - first:
-      213: 5470232898129372435
-    second: spr bo player anim at and move_6
+      213: -8820519570461644301
+    second: skeleton_bronze_6
   - first:
-      213: -8987975679857418839
-    second: spr bo player anim at and move_7
+      213: -2338858636455084837
+    second: skeleton_bronze_7
   - first:
-      213: -3897934678001855062
-    second: spr bo player anim at and move_8
+      213: 1179918538412228936
+    second: skeleton_bronze_8
   - first:
-      213: -4992837579821077633
-    second: spr bo player anim at and move_9
+      213: 4344624246750275215
+    second: skeleton_bronze_9
   - first:
-      213: 3970292025744113952
-    second: spr bo player anim at and move_10
+      213: 451473413286255623
+    second: skeleton_bronze_10
   - first:
-      213: -178843895949933037
-    second: spr bo player anim at and move_11
+      213: -385170289924350137
+    second: skeleton_bronze_11
   - first:
-      213: 1923572758998352384
-    second: spr bo player anim at and move_12
+      213: -6873374859988802808
+    second: skeleton_bronze_12
   - first:
-      213: 8882998190148410796
-    second: spr bo player anim at and move_13
+      213: -1968801498838622157
+    second: skeleton_bronze_13
   - first:
-      213: -2290011290117377166
-    second: spr bo player anim at and move_14
+      213: 4708523158208350947
+    second: skeleton_bronze_14
   - first:
-      213: -880627836458988307
-    second: spr bo player anim at and move_15
+      213: 4368326129533270831
+    second: skeleton_bronze_15
   - first:
-      213: 9147330709542678060
-    second: spr bo player anim at and move_16
+      213: -4673859596435849770
+    second: skeleton_bronze_16
   - first:
-      213: 3677028280632265282
-    second: spr bo player anim at and move_17
+      213: -577349486732942253
+    second: skeleton_bronze_17
   - first:
-      213: 6144612755591906504
-    second: spr bo player anim at and move_18
+      213: -3741994249291861763
+    second: skeleton_bronze_18
   - first:
-      213: -2398816673297730898
-    second: spr bo player anim at and move_19
+      213: -3816978985679768399
+    second: skeleton_bronze_19
   - first:
-      213: 5954221536870432952
-    second: spr bo player anim at and move_20
+      213: 402953370647944531
+    second: skeleton_bronze_20
   - first:
-      213: 1557851396316494555
-    second: spr bo player anim at and move_21
+      213: 3327742499662349886
+    second: skeleton_bronze_21
   - first:
-      213: -4998314770370890144
-    second: spr bo player anim at and move_22
+      213: 3747652571633347517
+    second: skeleton_bronze_22
   - first:
-      213: 756678700349137923
-    second: spr bo player anim at and move_23
+      213: -4920777368980191400
+    second: skeleton_bronze_23
   - first:
-      213: 5983291117355704475
-    second: spr bo player anim at and move_24
+      213: -7426748801636149770
+    second: skeleton_bronze_24
   - first:
-      213: 7013182854404703317
-    second: spr bo player anim at and move_25
+      213: -3835997062585552643
+    second: skeleton_bronze_25
   - first:
-      213: -4910235904586408704
-    second: spr bo player anim at and move_26
+      213: 5680485950243199189
+    second: skeleton_bronze_26
   - first:
-      213: 8261091972189457316
-    second: spr bo player anim at and move_27
+      213: -4958746869597657898
+    second: skeleton_bronze_27
   - first:
-      213: -826103433892913271
-    second: spr bo player anim at and move_28
+      213: 2480642917452547920
+    second: skeleton_bronze_28
   - first:
-      213: -5829889436874588887
-    second: spr bo player anim at and move_29
+      213: 7390200872640065333
+    second: skeleton_bronze_29
   - first:
-      213: -5411101866408911745
-    second: spr bo player anim at and move_30
+      213: -8141700724287576839
+    second: skeleton_bronze_30
   - first:
-      213: 1611332776873077140
-    second: spr bo player anim at and move_31
+      213: -2988461430315539440
+    second: skeleton_bronze_31
+  - first:
+      213: 1986085142584900024
+    second: skeleton_bronze_32
+  - first:
+      213: -1430873718864784472
+    second: skeleton_bronze_33
+  - first:
+      213: -8225530709499265936
+    second: skeleton_bronze_34
+  - first:
+      213: 810761583212640061
+    second: skeleton_bronze_35
+  - first:
+      213: -495330060179418514
+    second: skeleton_bronze_36
+  - first:
+      213: -7825315460450159783
+    second: skeleton_bronze_37
+  - first:
+      213: 5228595124439162941
+    second: skeleton_bronze_38
+  - first:
+      213: -1321404124300341403
+    second: skeleton_bronze_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -207,369 +231,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr bo player anim at and move_0
+      name: skeleton_bronze_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 160
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d86f2eb4a10a85080800000000000000
-      internalID: -9198426204101478771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 192
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 575d730fb313863f0800000000000000
-      internalID: -907421191412132491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_2
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 192
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d0da746e9ad82f90800000000000000
-      internalID: -6978087248785125163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_3
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 160
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a4a3a5599394d450800000000000000
-      internalID: 6112672881024672935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_4
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 192
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf2da05b6a6fa0f0800000000000000
-      internalID: -1103546374534909986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_5
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 160
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 625581631ebfac6f0800000000000000
-      internalID: -663441050389949146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_6
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 192
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31528ab96db2aeb40800000000000000
-      internalID: 5470232898129372435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_7
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 160
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ad9f305dbb444380800000000000000
-      internalID: -8987975679857418839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_8
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 96
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa5d5000011c7e9c0800000000000000
-      internalID: -3897934678001855062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_9
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 128
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7b2b81aca0e5bab0800000000000000
-      internalID: -4992837579821077633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_10
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 97
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0214b09df8f491730800000000000000
-      internalID: 3970292025744113952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_11
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 128
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31648a79c6e948df0800000000000000
-      internalID: -178843895949933037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_12
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 96
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00207b79b37e1ba10800000000000000
-      internalID: 1923572758998352384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_13
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 128
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caddb303acfb64b70800000000000000
-      internalID: 8882998190148410796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_14
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 97
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2737be85dde3830e0800000000000000
-      internalID: -2290011290117377166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_15
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 128
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dec8a8406a167c3f0800000000000000
-      internalID: -880627836458988307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_16
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 64
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2e2051d0d8d1fe70800000000000000
-      internalID: 9147330709542678060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_18
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 64
-        width: 26
+        x: 7
+        y: 0
+        width: 17
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -578,19 +245,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c4c363eebc064550800000000000000
-      internalID: 6144612755591906504
+      spriteID: 0c07a9513eb32d450800000000000000
+      internalID: 6112013490801242304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_19
+      name: skeleton_bronze_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 64
-        width: 24
+        x: 39
+        y: 0
+        width: 17
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -599,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea2fdc2f1f0b5bed0800000000000000
-      internalID: -2398816673297730898
+      spriteID: af3c6a5c578ff8dc0800000000000000
+      internalID: -3634413189553798150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_20
+      name: skeleton_bronze_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 67
-        width: 4
-        height: 6
+        x: 71
+        y: 0
+        width: 17
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,145 +287,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b08423e0f4a1a250800000000000000
-      internalID: 5954221536870432952
+      spriteID: 0a4705fc0f1664ad0800000000000000
+      internalID: -2718377638173313888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_21
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 64
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bda7a4257999e9510800000000000000
-      internalID: 1557851396316494555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_22
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 26
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0667474d23b62aab0800000000000000
-      internalID: -4998314770370890144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_24
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 32
-        width: 24
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b90acb5029be80350800000000000000
-      internalID: 5983291117355704475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_25
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 35
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55407ad06a4d35160800000000000000
-      internalID: 7013182854404703317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_26
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 33
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00d12c7d5765bdbb0800000000000000
-      internalID: -4910235904586408704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_27
+      name: skeleton_bronze_3
       rect:
         serializedVersion: 2
         x: 103
-        y: 32
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ab0f2b216b45a270800000000000000
-      internalID: 8261091972189457316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr bo player anim at and move_28
-      rect:
-        serializedVersion: 2
-        x: 2
         y: 0
-        width: 25
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175fc9f8b50cf5fb0800000000000000
+      internalID: -4656791990193818255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 13
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -767,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f1513cd471984f0800000000000000
-      internalID: -826103433892913271
+      spriteID: d659e92f3206ca970800000000000000
+      internalID: 8767488282094114157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_29
+      name: skeleton_bronze_5
       rect:
         serializedVersion: 2
-        x: 37
-        y: 1
-        width: 22
-        height: 29
+        x: 167
+        y: 0
+        width: 15
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -788,19 +350,670 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92db94bf172181fa0800000000000000
-      internalID: -5829889436874588887
+      spriteID: 5273c1a926df8c740800000000000000
+      internalID: 5172662771969177381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_30
+      name: skeleton_bronze_6
       rect:
         serializedVersion: 2
-        x: 69
+        x: 200
+        y: 0
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9a04c0f28379580800000000000000
+      internalID: -8820519570461644301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc7d324674ba8fd0800000000000000
+      internalID: -2338858636455084837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84185f1c8a9ef5010800000000000000
+      internalID: 1179918538412228936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86691ecbb43b4c30800000000000000
+      internalID: 4344624246750275215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_10
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cd5786da4f34600800000000000000
+      internalID: 451473413286255623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f560b79a997aaf0800000000000000
+      internalID: -385170289924350137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80364464bfddc90a0800000000000000
+      internalID: -6873374859988802808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330a77cc7796da4e0800000000000000
+      internalID: -1968801498838622157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_14
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea85b59dd8085140800000000000000
+      internalID: 4708523158208350947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_15
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b33ed68796f9c30800000000000000
+      internalID: 4368326129533270831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_16
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddf360d57d132fb0800000000000000
+      internalID: -4673859596435849770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_17
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354670463b7dcf7f0800000000000000
+      internalID: -577349486732942253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_18
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df077636e04c11cc0800000000000000
+      internalID: -3741994249291861763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b43d63f5dd570bc0800000000000000
+      internalID: -3816978985679768399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_20
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d5486a4f3979500800000000000000
+      internalID: 402953370647944531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_21
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36485c1c248e2e20800000000000000
+      internalID: 3327742499662349886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_22
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbe8c17826520430800000000000000
+      internalID: 3747652571633347517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 0
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8578727ed03e5bbb0800000000000000
+      internalID: -4920777368980191400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_24
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f55b624053eee890800000000000000
+      internalID: -7426748801636149770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_25
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0752ddefcc3cac0800000000000000
+      internalID: -3835997062585552643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_26
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8d7df00e325de40800000000000000
+      internalID: 5680485950243199189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_27
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d42d82aefdfe2bb0800000000000000
+      internalID: -4958746869597657898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_28
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057095527930d6220800000000000000
+      internalID: 2480642917452547920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_29
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 0
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f2e78e9844f8660800000000000000
+      internalID: 7390200872640065333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_30
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f46c4de35ed20f80800000000000000
+      internalID: -8141700724287576839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_31
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 0
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142615a92ad686d0800000000000000
+      internalID: -2988461430315539440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_32
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 0
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b934791aedff8b10800000000000000
+      internalID: 1986085142584900024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_33
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 0
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a35f9c0fe3842ce0800000000000000
+      internalID: -1430873718864784472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_34
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cba33866b09dd80800000000000000
+      internalID: -8225530709499265936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_35
+      rect:
+        serializedVersion: 2
+        x: 1125
         y: 0
         width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d373ce44d57604b00800000000000000
+      internalID: 810761583212640061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_36
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62de644feb3029f0800000000000000
+      internalID: -495330060179418514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_37
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 19
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -809,20 +1022,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c5e319587e7e4b0800000000000000
-      internalID: -5411101866408911745
+      spriteID: 953fe7c8c05e66390800000000000000
+      internalID: -7825315460450159783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr bo player anim at and move_31
+      name: skeleton_bronze_38
       rect:
         serializedVersion: 2
-        x: 101
-        y: 1
-        width: 22
-        height: 29
+        x: 1225
+        y: 0
+        width: 16
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,8 +1043,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 499a6749f9a9c5610800000000000000
-      internalID: 1611332776873077140
+      spriteID: d30298a3093bf8840800000000000000
+      internalID: 5228595124439162941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_bronze_39
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 0
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f875633fd69ade0800000000000000
+      internalID: -1321404124300341403
       vertices: []
       indices: 
       edges: []
