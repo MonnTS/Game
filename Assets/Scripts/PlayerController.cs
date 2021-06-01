@@ -1,22 +1,21 @@
-﻿using System;
-using UnityEngine;
-
+﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
-    private float _speed = 5f;
+    [FormerlySerializedAs("_speed")] public float movementSpeed = 5f;
+    [FormerlySerializedAs("_rb")] public Rigidbody2D rb;
+    Vector2 movement;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        //ignored
-    }
-
     // Update is called once per frame
     void Update()
     {
-        var _moveInput = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        transform.position += _moveInput * Time.deltaTime * _speed;
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
     }
 
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * (movementSpeed * Time.fixedDeltaTime));
+    }
 }
