@@ -12,6 +12,7 @@ namespace Controller
         // 2D Vector
         private Vector2 _movement;
         // String based property lookup is inefficient in animator, so we will refactor the code just a little.
+        // Converting string to int, which is our variables in animator. 
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int Speed = Animator.StringToHash("Speed");
