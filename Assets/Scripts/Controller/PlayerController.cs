@@ -44,7 +44,7 @@ namespace Controller
         }
 
         // Method for the attack
-        public void Attack()
+        private void Attack()
         {
             animator.SetTrigger(Attack1);
         }
