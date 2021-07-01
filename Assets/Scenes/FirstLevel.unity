@@ -249,8 +249,9 @@ GameObject:
   - component: {fileID: 536445834}
   - component: {fileID: 536445833}
   - component: {fileID: 536445836}
+  - component: {fileID: 536445837}
   m_Layer: 0
-  m_Name: spr bo player anim at and move_0
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,6 +402,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &536445837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536445830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887a20bd42a94ea1a2b89a17889947ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 536445836}
 --- !u!1 &646390339
 GameObject:
   m_ObjectHideFlags: 0
