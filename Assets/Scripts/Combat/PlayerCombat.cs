@@ -9,9 +9,9 @@ namespace Combat
         public Transform attackPoint;
         public LayerMask enemyLayer;
         
-        private const float RangeAttack = 0.5f;
+        public float attackRange = 0.5f;
         private const float AttackRate = 2f;
-        private float _nextAttackTime = 0f;
+        private float _nextAttackTime;
         private int _attackDamage = 15;
         
         // Getting a trigger with the name "Attack" in an efficient way.
@@ -28,7 +28,7 @@ namespace Combat
         private void Combat()
         {
             animator.SetTrigger(Attack);
-            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, RangeAttack,
+            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
                 enemyLayer);
 
             foreach (var enemy in hitEnemies)
@@ -37,10 +37,10 @@ namespace Combat
             }
         }
 
-        public void OnDrawGizmosSelected()
+        private void OnDrawGizmosSelected()
         {
             if (attackPoint == null) return;
-            Gizmos.DrawWireSphere(attackPoint.position, RangeAttack);
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
     }
 }
