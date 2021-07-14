@@ -7,6 +7,7 @@ namespace Data
         private int _currentHealth;
         private int _enemyHealth = 100;
         private SpriteRenderer _spriteRenderer;
+        
         void Start()
         {
             _currentHealth = _enemyHealth;
@@ -21,11 +22,7 @@ namespace Data
 
         private void Death()
         {
-            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach(var enemy in enemies)
-            {
-                Destroy(enemy);
-            }
+            Destroy(gameObject);
         }
     }
 }
