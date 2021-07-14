@@ -4,19 +4,19 @@ namespace Data
 {
     public class EnemyData : MonoBehaviour
     {
-        private int _currentHealth;
-        private int _enemyHealth = 100;
+        public int currentHealth;
+        public int enemyHealth = 100;
         private SpriteRenderer _spriteRenderer;
         
         void Start()
         {
-            _currentHealth = _enemyHealth;
+            currentHealth = enemyHealth;
         }
 
         public void Damage(int damage)
         {
-            _currentHealth -= damage;
-            if(_currentHealth <= 0)
+            currentHealth -= damage;
+            if(currentHealth <= 0)
                 Death();
         }
 
