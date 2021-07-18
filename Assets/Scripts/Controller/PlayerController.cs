@@ -16,7 +16,6 @@ namespace Controller
         
         public void Update()
         {
-            // Getting X, Y from the object.
             _movement.x = Input.GetAxisRaw("Horizontal"); 
             _movement.y = Input.GetAxisRaw("Vertical");
 

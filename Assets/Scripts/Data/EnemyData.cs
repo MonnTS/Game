@@ -16,8 +16,11 @@ namespace Data
         public void Damage(int damage)
         {
             currentHealth -= damage;
-            if(currentHealth <= 0)
+            
+            if (currentHealth <= 0)
+            {
                 Death();
+            }
         }
 
         private void Death()

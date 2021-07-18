@@ -21,7 +21,9 @@ namespace Combat
         {
             if (!(Time.time >= _nextAttackTime)) return;
             if (!Input.GetMouseButtonDown(0)) return;
+            
             Combat();
+            
             _nextAttackTime = Time.time + 1f / AttackRate;
         }
 
@@ -37,6 +39,7 @@ namespace Combat
             }
         }
 
+        // Draws a white circle of hit range in unity inspector
         private void OnDrawGizmosSelected()
         {
             if (attackPoint == null) return;
