@@ -4,31 +4,38 @@ namespace Controller
 {
     public class PlayerController : MonoBehaviour
     {
+        #region FIELDS
+        
         private const float MovementSpeed = 5.0f;
-        private Vector2 _movement;
+        public Vector2 movement;
         public Rigidbody2D rigidBody;
         public Animator animator;
         
-        // Getting X, Y and Speed in an efficient way.
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int Speed = Animator.StringToHash("Speed");
-        
+
+        #endregion
+
+        #region METHODS
+
         public void Update()
         {
-            _movement.x = Input.GetAxisRaw("Horizontal"); 
-            _movement.y = Input.GetAxisRaw("Vertical");
+            movement.x = Input.GetAxisRaw("Horizontal"); 
+            movement.y = Input.GetAxisRaw("Vertical");
 
             // Getting data for the player's animation.
-            animator.SetFloat(Horizontal, _movement.x);
-            animator.SetFloat(Vertical, _movement.y);
-            animator.SetFloat(Speed, _movement.sqrMagnitude);
+            animator.SetFloat(Horizontal, movement.x);
+            animator.SetFloat(Vertical, movement.y);
+            animator.SetFloat(Speed, movement.sqrMagnitude);
         }
 
         public void FixedUpdate()
         {
             // Formula for movement of the object Player.
-            rigidBody.MovePosition(rigidBody.position + _movement * (MovementSpeed * Time.fixedDeltaTime));
+            rigidBody.MovePosition(rigidBody.position + movement * (MovementSpeed * Time.fixedDeltaTime));
         }
+
+        #endregion
     }
 }

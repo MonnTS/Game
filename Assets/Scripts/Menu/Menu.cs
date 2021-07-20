@@ -5,6 +5,8 @@ namespace Menu
 {
     public class Menu : MonoBehaviour
     {
+        #region METHODS
+
         public void btn_Play()
         {
             // Loads all scenes by index not only the chosen.
@@ -16,5 +18,7 @@ namespace Menu
             Debug.Log("Yes");
             Application.Quit();
         }
+
+        #endregion
     }
 }

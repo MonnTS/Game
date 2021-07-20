@@ -5,6 +5,8 @@ namespace Menu
 {
     public class Options : MonoBehaviour
     {
+        #region METHODS
+
         //TODO: Implements new methods
         public void ck_FullScreen()
         {
@@ -25,5 +27,7 @@ namespace Menu
         {
             throw new NotImplementedException();
         }
+
+        #endregion
     }
 }

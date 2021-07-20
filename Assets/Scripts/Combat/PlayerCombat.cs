@@ -5,6 +5,8 @@ namespace Combat
 {
     public class PlayerCombat : MonoBehaviour
     {
+        #region FIELDS
+        
         public Animator animator;
         public Transform attackPoint;
         public LayerMask enemyLayer;
@@ -14,9 +16,11 @@ namespace Combat
         private float _nextAttackTime;
         private int _attackDamage = 15;
         
-        // Getting a trigger with the name "Attack" in an efficient way.
         private static readonly int Attack = Animator.StringToHash("Attack");
-        
+
+        #endregion
+
+        #region METHODS
         public void Update()
         {
             if (!(Time.time >= _nextAttackTime)) return;
@@ -30,6 +34,7 @@ namespace Combat
         private void Combat()
         {
             animator.SetTrigger(Attack);
+            // ReSharper disable once Unity.PreferNonAllocApi
             var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
                 enemyLayer);
 
@@ -45,5 +50,7 @@ namespace Combat
             if (attackPoint == null) return;
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
+
+        #endregion
     }
 }

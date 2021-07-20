@@ -4,11 +4,17 @@ namespace Data
 {
     public class EnemyData : MonoBehaviour
     {
+        #region FIELDS
+        
         public int currentHealth;
         public int enemyHealth = 100;
         private SpriteRenderer _spriteRenderer;
-        
-        void Start()
+
+        #endregion
+
+        #region METHODS
+
+        private void Start()
         {
             currentHealth = enemyHealth;
         }
@@ -27,6 +33,8 @@ namespace Data
         {
             Destroy(gameObject);
         }
+
+        #endregion
     }
 }
 

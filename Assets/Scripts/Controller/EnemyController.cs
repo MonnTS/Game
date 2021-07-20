@@ -4,9 +4,15 @@ namespace Controller
 {
     public class EnemyController : MonoBehaviour
     {
+        #region FIELDS
+        
         public Animator animator;
         public Transform target;
         public Transform defaultPosition;
+
+        #endregion
+        
+        #region PROPERTIES
 
         [SerializeField] private float movementSpeed;
         [SerializeField] private float maxRange;
@@ -16,6 +22,10 @@ namespace Controller
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
         
+        #endregion
+
+        #region METHODDS
+
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -84,5 +94,7 @@ namespace Controller
                 animator.SetBool(IsMoving, false);
             }
         }
+        
+        #endregion
     }
 }
