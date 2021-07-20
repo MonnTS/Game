@@ -4,7 +4,7 @@ namespace Controller
 {
     public class PlayerController : MonoBehaviour
     {
-        private float _movementSpeed = 5.0f;
+        private const float MovementSpeed = 5.0f;
         private Vector2 _movement;
         public Rigidbody2D rigidBody;
         public Animator animator;
@@ -28,7 +28,7 @@ namespace Controller
         public void FixedUpdate()
         {
             // Formula for movement of the object Player.
-            rigidBody.MovePosition(rigidBody.position + _movement * (_movementSpeed * Time.fixedDeltaTime));
+            rigidBody.MovePosition(rigidBody.position + _movement * (MovementSpeed * Time.fixedDeltaTime));
         }
     }
 }
