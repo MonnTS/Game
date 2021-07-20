@@ -18,7 +18,7 @@ namespace Menu
             Application.Quit();
         }
         
-        // TODO: Implements new methods
+        //TODO: Implements new methods
         public void ck_FullScreen()
         {
             throw new NotImplementedException();
