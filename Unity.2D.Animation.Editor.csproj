@@ -12,10 +12,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{70580DA3-EBFB-2073-D8F5-436124FBC8B9}</ProjectGuid>
+    <ProjectGuid>{34C7E903-8801-2CF5-F4E7-39AF6696CE28}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <AssemblyName>Unity.2D.Animation.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -58,97 +58,197 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\GitHub\Editor\ExtensionLoader.cs" />
-     <Compile Include="Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs" />
-     <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
-     <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Path.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="PsdPlugin">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Common.Editor">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity Project/MyFirstGameProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Analytics.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\AssemblyInfo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\ClipperLib\clipper.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\ICharacterDataProvider.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\LayoutOverlay\DropdownMenu.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\LayoutOverlay\LayoutOverlay.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\LayoutOverlay\LayoutOverlayUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\LayoutOverlay\Manipulators\Draggable.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\LayoutOverlay\ScrollableToolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\ResourceLoader.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\AssociateBonesScope.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\BaseTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\BoneDrawingUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Cache\BaseObject.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Cache\Cache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Cache\CacheObject.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\CharacterModeTool\SwitchModeTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\ColorExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\CopyTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\DefaultPoseScope.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\DrawingUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\GenerateGeometryTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\GenerateWeightsTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\HorizontalToggleTools.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\Brush.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\GUIWrapper.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\ISkeletonView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\ISpriteMeshView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\RectSelectionTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\RectSlider.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\SkeletonController.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\SkeletonView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\Slider2D.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\SpriteMeshController.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\SpriteMeshView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\UnselectTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IMGUI\WeightInspector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\IconUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MathUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MeshPreviewTool\IMeshPreviewBehaviour.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MeshPreviewTool\MeshPreviewBehaviour.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MeshPreviewTool\MeshPreviewTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MeshTool\MeshTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\MeshTool\MeshToolWrapper.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\ModuleToolGroup.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\ModuleUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\OutlineGenerator\IOutlineGenerator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\OutlineGenerator\OutlineGenerator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\BoneSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\IBoneSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\ISelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\ITransformSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\IndexedSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\SerializableSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selection\SkeletonSelection.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SelectionTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\CircleVertexSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\GenericVertexSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\ICircleSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\IRectSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\ISelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\RectBoneSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\RectVertexSelector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Selectors\Unselector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SerializableDictionary.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkeletonTool\SkeletonStyles.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkeletonTool\SkeletonTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkeletonTool\SkeletonToolView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkeletonTool\SkeletonToolWrapper.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\BoneCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\BoneCacheExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\CharacterCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\CharacterPartCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\CharacterPartCacheExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\MeshCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\MeshPreviewCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkeletonCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkeletonCacheExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkinningCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkinningCachePersistentState.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkinningEnums.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SkinningEvents.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SpriteCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\SpriteCacheExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\TransformCache.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCache\TransformCacheExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningCopyUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningModule.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningModuleView.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningSerializer\ISkinningSerializer.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningSerializer\SkinningSerializerJSON.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SkinningSerializer\SkinningSerializerXML.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteBoneInfluence\SpriteBoneInfluenceListWidget.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteBoneInfluence\SpriteBoneInfluenceTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteBoneInfluence\SpriteBoneInfluenceWindow.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\BoneWeightExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\Edge.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\EditableBoneWeight.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\EditableBoneWeightUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\SmoothingUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\SpriteMeshData.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\SpriteMeshDataController.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\Vertex2D.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\SpriteMeshData\WeightEditor.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\TextContent.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Triangulation\ITriangulator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Triangulation\TriangulationUtility.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Triangulation\Triangulator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\BoneInspectorPanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\BoneToolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\CopyToolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\GenerateGeometryPanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\GenerateWeightsPanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\MeshToolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\PastePanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\Toolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\VisualElementExtensions.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\WeightInspectorIMGUIPanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\WeightPainterPanel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UI\WeightToolbar.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\DisableUndoScope.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\DisabledUndo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\ICacheUndo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\IUndo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\UndoScope.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\Undo\UnityEngineUndo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\UserSettings.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\BoneReparentTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\BoneTreeViewController.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\BoneTreeViewModel.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\BoneVisibilityTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\BoneVisibilityToolInterface.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\MeshVisibilityTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\SpriteVisibilityTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\VisibilityTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\VisibilityToolBase.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\VisibilityToolColumnHeader.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\VisibilityTool\VisibilityToolResizer.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\WeightPainterTool.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\WeightPainterToolWrapper.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\WeightsGenerator\BoundedBiharmonicWeightsGenerator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SkinningModule\WeightsGenerator\IWeightsGenerator.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteLib\SpriteLibraryAssetInspector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteLib\SpriteLibraryDataProvider.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteLib\SpriteLibraryInspector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteLib\SpriteResolverInspector.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteLib\SpriteSelectionWidget.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteOutlineRenderer\SpriteOutlineRenderer.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpritePostProcess.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\BoneGizmo.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\BoneGizmoToggle.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\SpriteSkinCompositeDebugWindow.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\SpriteSkinEditor.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\SpriteSkinEntityEditor.cs" />
+     <Compile Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\SpriteSkin\TransformExtensions.cs" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\MeshToolbar.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\WeightInspectorIMGUIPanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneToolbar.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneReparentWindow.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteBitMask.shader" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\CopyToolbarStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteBoneInfluenceWindowStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteBoneInfluenceListWidget.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\MeshToolbarStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\PastePanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneInspectorPanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\LayoutOverlay\ScrollableToolbar.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\GenerateWeightsPanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\ToolbarStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\WeightToolbarStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\LayoutOverlay\LayoutOverlay.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneToolbarStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\GenerateGeometryPanel.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\GenerateWeightsPanel.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\WeightPainterPanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteOutline.shader" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\GenerateGeometryPanelStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneInspectorPanel.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\PastePanel.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\BoneReparentStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteBoneInfluenceListWidgetStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\VisibilityToolbar.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\VisibilityTool.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\LayoutOverlay\LayoutOverlayStyle.uss" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\VisibilityToolWindow.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\CopyToolbar.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\WeightToolbar.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SpriteBoneInfluenceWindow.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\WeightPainterPanel.uxml" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Unity.2D.Animation.Editor.asmdef" />
+     <None Include="D:\Unity Project\MyFirstGameProject\Library\PackageCache\com.unity.2d.animation@3.2.4\Editor\Assets\SkinningModule\SkinningModule-GUITextureClip.shader" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Unity/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
@@ -713,6 +813,52 @@
  <Reference Include="Boo.Lang">
  <HintPath>D:/Unity/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{061294B7-40A3-4379-F7E6-BF1C7995982A}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
+      <Project>{2097B787-D219-33AC-F22A-55EB08B5B484}</Project>
+      <Name>Unity.InternalAPIEngineBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
+      <Project>{507F8307-9084-AFF5-2815-B71C796C9D26}</Project>
+      <Name>Unity.2D.Common.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
+      <Project>{B5B1D4C0-9DF8-3269-BDCF-8D1C3E05092C}</Project>
+      <Name>Unity.2D.Common.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
+      <Project>{565F8F7B-B19E-C807-1513-21E93795F401}</Project>
+      <Name>Unity.2D.Animation.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
+      <Project>{1342EB41-54D5-7F8A-EA1C-C4575CFB683D}</Project>
+      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{EAA7A0C8-B5AF-A515-2F67-2D2F8A8CF66D}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{1DC39DC2-6F84-19A3-892A-987C8E2C9279}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{17865173-0B6D-04C3-3303-1B9302A638B0}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{FFD5F8E3-1813-535A-520A-31D1E5541B65}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{C76AC320-E00E-98F9-FF37-DA4439FC74AE}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
