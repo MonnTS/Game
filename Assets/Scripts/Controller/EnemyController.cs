@@ -6,8 +6,8 @@ namespace Controller
     {
         #region FIELDS
         
-        public Animator animator;
-        public Transform target;
+        private Animator _animator;
+        private Transform _target;
         public Transform defaultPosition;
 
         #endregion
@@ -28,10 +28,10 @@ namespace Controller
 
         private void Start()
         {
-            animator = GetComponent<Animator>();
+            _animator = GetComponent<Animator>();
             
             // Find the player by his script.
-            target = FindObjectOfType<PlayerController>().transform;
+            _target = FindObjectOfType<PlayerController>().transform;
 
             movementSpeed = 2.0f;
             maxRange = 5.0f;
@@ -51,12 +51,12 @@ namespace Controller
              * he will return to the
              * default position.
              */
-            if (Vector3.Distance(target.position, transform.position) <= maxRange
-                && Vector3.Distance(target.position, transform.position) >= minRange)
+            if (Vector3.Distance(_target.position, transform.position) <= maxRange
+                && Vector3.Distance(_target.position, transform.position) >= minRange)
             {
                 Follow();
             }
-            else if(Vector3.Distance(target.position, transform.position) >= maxRange)
+            else if(Vector3.Distance(_target.position, transform.position) >= maxRange)
             {
                 BackToThePoint();
             }
@@ -65,14 +65,14 @@ namespace Controller
         private void Follow()
         {
             var position = transform.position;
-            var positionE = target.position;
+            var positionE = _target.position;
             
-            animator.SetFloat(Horizontal, positionE.x - position.x);
-            animator.SetFloat(Vertical, positionE.y - position.y);
-            animator.SetBool(IsMoving, true);
+            _animator.SetFloat(Horizontal, positionE.x - position.x);
+            _animator.SetFloat(Vertical, positionE.y - position.y);
+            _animator.SetBool(IsMoving, true);
             
             position = Vector3.MoveTowards(position,
-                target.transform.position, movementSpeed * Time.deltaTime);
+                _target.transform.position, movementSpeed * Time.deltaTime);
             transform.position = position;
         }
 
@@ -82,8 +82,8 @@ namespace Controller
             var position1 = transform.position;
             var positionE = position1;
             
-            animator.SetFloat(Horizontal, position.x - positionE.x);
-            animator.SetFloat(Vertical, position.y - positionE.y);   
+            _animator.SetFloat(Horizontal, position.x - positionE.x);
+            _animator.SetFloat(Vertical, position.y - positionE.y);   
             
             position1 = Vector3.MoveTowards(position1, position,
                 movementSpeed * Time.deltaTime);
@@ -91,7 +91,7 @@ namespace Controller
 
             if (Vector3.Distance(transform.position, defaultPosition.position) == 0)
             {
-                animator.SetBool(IsMoving, false);
+                _animator.SetBool(IsMoving, false);
             }
         }
         

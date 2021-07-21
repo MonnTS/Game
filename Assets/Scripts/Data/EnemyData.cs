@@ -6,9 +6,8 @@ namespace Data
     {
         #region FIELDS
         
-        public int currentHealth;
-        public int enemyHealth = 100;
-        private SpriteRenderer _spriteRenderer;
+        [SerializeField]private int currentHealth;
+        [SerializeField]private int enemyHealth = 100;
 
         #endregion
 

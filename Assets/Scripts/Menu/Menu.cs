@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using Interfaces;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Menu
 {
-    public class Menu : MonoBehaviour
+    public class Menu : MonoBehaviour, ISettings
     {
         #region METHODS
 
@@ -17,6 +19,26 @@ namespace Menu
         {
             Debug.Log("Yes");
             Application.Quit();
+        }
+
+        public void ck_FullScreen()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ck_Windowed()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ck_MuteMusic()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ck_MuteSounds()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
