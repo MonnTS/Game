@@ -24,7 +24,7 @@ namespace Controller
         
         #endregion
 
-        #region METHODDS
+        #region UNITYMETHODDS
 
         private void Start()
         {
@@ -62,6 +62,10 @@ namespace Controller
             }
         }
 
+        #endregion
+        
+        #region METHODS
+        
         private void Follow()
         {
             var position = transform.position;
@@ -79,15 +83,15 @@ namespace Controller
         private void BackToThePoint()
         {
             var position = defaultPosition.position;
-            var position1 = transform.position;
-            var positionE = position1;
+            var positionT = transform.position;
+            var positionE = positionT;
             
             _animator.SetFloat(Horizontal, position.x - positionE.x);
             _animator.SetFloat(Vertical, position.y - positionE.y);   
             
-            position1 = Vector3.MoveTowards(position1, position,
+            positionT = Vector3.MoveTowards(positionT, position,
                 movementSpeed * Time.deltaTime);
-            transform.position = position1;
+            transform.position = positionT;
 
             if (Vector3.Distance(transform.position, defaultPosition.position) == 0)
             {

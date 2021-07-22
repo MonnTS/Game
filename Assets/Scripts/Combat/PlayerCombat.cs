@@ -20,7 +20,7 @@ namespace Combat
 
         #endregion
 
-        #region METHODS
+        #region UNITYMETHODS
         private void Update()
         {
             if (!(Time.time >= _nextAttackTime)) return;
@@ -31,6 +31,18 @@ namespace Combat
             _nextAttackTime = Time.time + 1f / attackRate;
         }
 
+        // TODO: Fix the hitbox position.
+        // Draws a white circle of hit range in unity inspector
+        private void OnDrawGizmosSelected()
+        {
+            if (attackPoint == null) return;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+        
+        #endregion
+
+        #region METHODS
+        
         private void Combat()
         {
             animator.SetTrigger(Attack);
@@ -43,14 +55,7 @@ namespace Combat
                 enemy.GetComponent<EnemyData>().Damage(attackDamage);
             }
         }
-
-        // Draws a white circle of hit range in unity inspector
-        private void OnDrawGizmosSelected()
-        {
-            if (attackPoint == null) return;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-        }
-
+        
         #endregion
     }
 }

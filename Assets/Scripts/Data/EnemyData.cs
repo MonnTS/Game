@@ -11,12 +11,16 @@ namespace Data
 
         #endregion
 
-        #region METHODS
+        #region UNITYMETHODS
 
         private void Start()
         {
             currentHealth = enemyHealth;
         }
+
+        #endregion
+
+        #region METHODS
 
         public void Damage(int damage)
         {

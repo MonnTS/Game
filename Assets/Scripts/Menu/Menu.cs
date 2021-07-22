@@ -1,11 +1,11 @@
 ﻿using System;
-using Interfaces;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Menu
 {
-    public class Menu : MonoBehaviour, ISettings
+    // TODO: Is it possible to not inherit MonoBehaviour?
+    public class Menu : MonoBehaviour
     {
         #region METHODS
 

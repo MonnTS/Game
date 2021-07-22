@@ -9,8 +9,7 @@ namespace Controller
         private Vector2 _movement;
         public Animator animator;
         public Rigidbody2D rigidBody;
-       
-        
+
         [SerializeField]private float movementSpeed = 5.0f;
         
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
@@ -19,7 +18,7 @@ namespace Controller
 
         #endregion
 
-        #region METHODS
+        #region UNITYMETHODS
 
         public void Update()
         {
