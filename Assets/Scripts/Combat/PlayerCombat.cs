@@ -5,15 +5,29 @@ namespace Combat
 {
     public class PlayerCombat : MonoBehaviour
     {
+        #region METHODS
+
+        private void Combat()
+        {
+            animator.SetTrigger(Attack);
+
+            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
+                enemyLayer);
+
+            foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
+        }
+
+        #endregion
+
         #region FIELDS
-        
+
         public Animator animator;
         public Transform attackPoint;
         public LayerMask enemyLayer;
-        
-        [SerializeField]private float attackRange = 0.5f;
-        [SerializeField]private float attackRate = 2f;
-        [SerializeField]private int attackDamage = 15;
+
+        [SerializeField] private float attackRange = 0.5f;
+        [SerializeField] private float attackRate = 2f;
+        [SerializeField] private int attackDamage = 15;
         private float _nextAttackTime;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
@@ -21,13 +35,14 @@ namespace Combat
         #endregion
 
         #region UNITYMETHODS
+
         private void Update()
         {
             if (!(Time.time >= _nextAttackTime)) return;
             if (!Input.GetMouseButtonDown(0)) return;
-            
+
             Combat();
-            
+
             _nextAttackTime = Time.time + 1f / attackRate;
         }
 
@@ -38,24 +53,7 @@ namespace Combat
             if (attackPoint == null) return;
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
-        
-        #endregion
 
-        #region METHODS
-        
-        private void Combat()
-        {
-            animator.SetTrigger(Attack);
-
-            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
-                enemyLayer);
-
-            foreach (var enemy in hitEnemies)
-            {
-                enemy.GetComponent<EnemyData>().Damage(attackDamage);
-            }
-        }
-        
         #endregion
     }
 }
