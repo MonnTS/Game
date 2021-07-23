@@ -48,10 +48,6 @@ namespace Menu
             Screen.SetResolution(res.width, res.height, false);
         }
         
-        public void sb_Volume(float volume)
-        {
-            audioMixer.SetFloat("Volume", volume);
-        }
         public void cb_MuteMusic()
         {
             _isMuted = !_isMuted;
