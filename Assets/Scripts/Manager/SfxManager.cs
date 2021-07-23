@@ -13,12 +13,7 @@ namespace Manager
         #endregion
 
         #region UNITYMETHODS
-
-        private void Awake()
-        {
-            audioSource.Play();
-        }
-
+        
         private void Update()
         {
             audioSource.volume = musicVolume;
