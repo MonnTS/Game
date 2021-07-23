@@ -5,7 +5,7 @@ namespace Controller
     public class PlayerController : MonoBehaviour
     {
         #region FIELDS
-
+        
         private Vector2 _movement;
         public Animator animator;
         public Rigidbody2D rigidBody;

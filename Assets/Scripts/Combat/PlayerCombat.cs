@@ -5,20 +5,6 @@ namespace Combat
 {
     public class PlayerCombat : MonoBehaviour
     {
-        #region METHODS
-
-        private void Combat()
-        {
-            animator.SetTrigger(Attack);
-
-            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
-                enemyLayer);
-
-            foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
-        }
-
-        #endregion
-
         #region FIELDS
 
         public Animator animator;
@@ -31,9 +17,9 @@ namespace Combat
         private float _nextAttackTime;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
-
+        
         #endregion
-
+        
         #region UNITYMETHODS
 
         private void Update()
@@ -52,6 +38,20 @@ namespace Combat
         {
             if (attackPoint == null) return;
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+
+        #endregion
+        
+        #region METHODS
+        
+        private void Combat()
+        {
+            animator.SetTrigger(Attack);
+
+            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
+                enemyLayer);
+
+            foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
         }
 
         #endregion

@@ -9,11 +9,7 @@ namespace Controller
         private Animator _animator;
         private Transform _target;
         public Transform defaultPosition;
-
-        #endregion
-
-        #region PROPERTIES
-
+        
         [SerializeField] private float movementSpeed;
         [SerializeField] private float maxRange;
         [SerializeField] private float minRange;
