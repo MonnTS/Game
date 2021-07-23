@@ -58,9 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Combat\BossCombat.cs" />
+     <Compile Include="Assets\Scripts\Combat\EnemyCombat.cs" />
      <Compile Include="Assets\Scripts\Combat\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Controller\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Data\BossData.cs" />
      <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />

@@ -52,6 +52,7 @@ namespace Combat
                 enemyLayer);
 
             foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
+            foreach (var enemy in hitEnemies) enemy.GetComponent<BossData>().Damage(attackDamage);
         }
 
         #endregion
