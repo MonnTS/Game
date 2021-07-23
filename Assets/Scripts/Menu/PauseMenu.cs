@@ -9,7 +9,15 @@ namespace Menu
         {
             throw new NotImplementedException();
         }
-        public void btn_Settings(){}
-        public void btn_ExitToMainMenu(){}
+
+        public void btn_Settings()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void btn_ExitToMainMenu()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
