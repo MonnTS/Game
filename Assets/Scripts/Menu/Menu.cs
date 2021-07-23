@@ -1,5 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 namespace Menu
@@ -7,6 +8,25 @@ namespace Menu
     // TODO: Is it possible to not inherit MonoBehaviour?
     public class Menu : MonoBehaviour
     {
+        #region FIELDS
+
+        public AudioMixer audioMixer;
+        public Slider slider;
+        public Toggle toggle;
+        
+        private bool _isMuted; 
+
+        #endregion
+
+        #region UNITYMETHODS
+
+        private void Start()
+        {
+            _isMuted = false;
+        }
+
+        #endregion
+        
         #region METHODS
 
         public void btn_Play()
@@ -21,24 +41,24 @@ namespace Menu
             Application.Quit();
         }
 
-        public void ck_FullScreen()
+        public void cb_FullScreen(bool isFullScreen)
         {
-            throw new NotImplementedException();
+            Screen.fullScreen = isFullScreen;
+            if (isFullScreen) return;
+            var res = Screen.currentResolution;
+            Screen.SetResolution(res.width, res.height, false);
         }
-
-        public void ck_Windowed()
+        
+        public void sb_Volume(float volume)
         {
-            throw new NotImplementedException();
+            audioMixer.SetFloat("Volume", volume);
         }
-
-        public void ck_MuteMusic()
+        public void cb_MuteMusic()
         {
-            throw new NotImplementedException();
-        }
-
-        public void ck_MuteSounds()
-        {
-            throw new NotImplementedException();
+            _isMuted = !_isMuted;
+            AudioListener.pause = _isMuted;
+            
+            slider.enabled = toggle.isOn;
         }
 
         #endregion

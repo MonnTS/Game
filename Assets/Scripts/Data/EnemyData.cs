@@ -10,7 +10,7 @@ namespace Data
         [SerializeField] private int enemyHealth = 100;
         [SerializeField] private int enemyDamage = 10;
         [SerializeField] private float attackRate = 2.0f;
-        private bool isInCollision;
+        private bool _isInCollision;
         
         private PlayerData _playerData;
         public Animator animator;
@@ -29,7 +29,7 @@ namespace Data
 
         private void Update()
         {
-            if (!isInCollision) return;
+            if (!_isInCollision) return;
             attackRate -= Time.deltaTime;
             
             if (!(attackRate <= 0)) return;
@@ -49,8 +49,7 @@ namespace Data
 
         private void OnCollisionStay2D()
         {
-            isInCollision = true;
-            
+            _isInCollision = true;
         }
         
         #endregion
