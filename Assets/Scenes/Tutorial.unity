@@ -2437,6 +2437,7 @@ GameObject:
   - component: {fileID: 1650795995}
   - component: {fileID: 1650795997}
   - component: {fileID: 1650795996}
+  - component: {fileID: 1650795998}
   m_Layer: 0
   m_Name: Silver Skeleton
   m_TagString: Enemy
@@ -2603,9 +2604,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860098457df441308e1a4acc0bed436f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1650795995}
   currentHealth: 0
-  enemyHealth: 100
+  bossHealth: 100
+--- !u!114 &1650795998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650795990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80ee6347d2649e9b332cace2fa27bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1650795995}
+  enemyDamage: 10
+  attackRate: 2
+--- !u!1 &1667690445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7846286775836787477, guid: f602cd71e469c934382a744d83b75910,
+    type: 3}
+  m_PrefabInstance: {fileID: 7846286775256231128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1667690451 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7846286775836787467, guid: f602cd71e469c934382a744d83b75910,
+    type: 3}
+  m_PrefabInstance: {fileID: 7846286775256231128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1667690453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667690445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ae483df1e84f1fb6172eb743bc0af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1667690451}
   enemyDamage: 10
   attackRate: 2
 --- !u!1001 &7355403713093139351
@@ -2753,6 +2793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846286775836787479, guid: f602cd71e469c934382a744d83b75910,
+        type: 3}
+      propertyPath: m_Mass
+      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f602cd71e469c934382a744d83b75910, type: 3}
