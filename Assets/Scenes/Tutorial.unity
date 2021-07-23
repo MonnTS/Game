@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 536445837}
   m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,9 +330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5257e79216d4f21479c0ebc4505b9e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {x: 0, y: 0}
-  rigidBody: {fileID: 536445835}
   animator: {fileID: 536445836}
+  rigidBody: {fileID: 536445835}
+  movementSpeed: 5
 --- !u!50 &536445835
 Rigidbody2D:
   serializedVersion: 4
@@ -391,6 +391,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.43
+  attackRate: 2
+  attackDamage: 15
 --- !u!1 &646390339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,8 +2790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de19521446e487d8a8656543d1bbab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  target: {fileID: 0}
   defaultPosition: {fileID: 1371765409}
   movementSpeed: 2
   maxRange: 5

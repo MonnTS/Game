@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Data
 {
@@ -9,6 +10,15 @@ namespace Data
         private void Start()
         {
             currentHealth = enemyHealth;
+        }
+
+        // TODO: Death Screen
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (!other.collider.CompareTag("Player")) return;
+
+            other.gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         #endregion
