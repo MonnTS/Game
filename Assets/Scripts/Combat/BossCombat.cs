@@ -5,6 +5,8 @@ namespace Combat
 {
     public class BossCombat : MonoBehaviour
     {
+        #region FIELDS
+
         public Animator animator;
         private PlayerData _playerData;
         
@@ -14,6 +16,10 @@ namespace Combat
         private bool _isInCollision;
         
         private static readonly int Attack = Animator.StringToHash("Attack");
+
+        #endregion
+
+        #region UNITYMETHODS
 
         private void Start()
         {
@@ -43,5 +49,7 @@ namespace Combat
         {
             _isInCollision = true;
         }
+
+        #endregion
     }
 }
