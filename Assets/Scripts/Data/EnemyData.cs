@@ -6,15 +6,16 @@ namespace Data
     {
         #region FIELDS
 
+        private PlayerData _playerData;
+        public Animator animator;
+        
         [SerializeField] private int currentHealth;
         [SerializeField] private int enemyHealth = 100;
         [SerializeField] private int enemyDamage = 10;
         [SerializeField] private float attackRate = 2.0f;
+        
         private bool _isInCollision;
-        
-        private PlayerData _playerData;
-        public Animator animator;
-        
+
         private static readonly int Attack = Animator.StringToHash("Attack");
 
         #endregion
@@ -34,7 +35,7 @@ namespace Data
             
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
-            attackRate = 2.0f;
+            attackRate = 2f;
             animator.SetTrigger(Attack);
         }
 
@@ -43,7 +44,6 @@ namespace Data
         {
             if (!other.collider.CompareTag("Player")) return;
 
-            
             _playerData.TakeDamage(enemyDamage);
         }
 

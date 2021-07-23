@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 namespace Menu
 {
-    // TODO: Is it possible to not inherit MonoBehaviour?
     public class Menu : MonoBehaviour
     {
         #region FIELDS
@@ -31,7 +30,7 @@ namespace Menu
 
         public void btn_Play()
         {
-            // Loads all scenes by index not only the chosen.
+            // Loads all scenes by index.
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 

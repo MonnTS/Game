@@ -32,6 +32,8 @@ namespace Data
             gameObject.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        
+        public void Death(){}
 
         #endregion
     }
