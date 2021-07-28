@@ -1,4 +1,3 @@
-using Menu;
 using UnityEngine;
 
 namespace Manager

@@ -9,12 +9,13 @@ namespace Menu
     {
         #region FIELDS
 
-        private static bool IsPlaying;
-        private static bool IsMuted;
+        private static bool _isPlaying;
+        private static bool _isMuted;
         
         public GameObject pauseMenu;
         public GameObject player;
         public GameObject settingsMenu;
+        
         public Slider slider;
         public Toggle toggle;
 
@@ -26,7 +27,7 @@ namespace Menu
         {
             if (!Input.GetKeyDown(KeyCode.Escape)) return;
             
-            if (IsPlaying)
+            if (_isPlaying)
             {
                 btn_Resume();
             }
@@ -41,12 +42,12 @@ namespace Menu
 
         #region METHODS
 
-        public void Pause()
+        private void Pause()
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
             player.GetComponent<PlayerController>().enabled = false;
-            IsPlaying = true;
+            _isPlaying = true;
         }
         
         public void btn_Resume()
@@ -54,7 +55,7 @@ namespace Menu
             pauseMenu.SetActive(false);
             Time.timeScale = 1f;
             player.GetComponent<PlayerController>().enabled = true;
-            IsPlaying = false;
+            _isPlaying = false;
         }
 
         public void btn_Back()
@@ -78,15 +79,13 @@ namespace Menu
         public void cb_FullScreen(bool isFullScreen)
         {
             Screen.fullScreen = isFullScreen;
-            if (isFullScreen) return;
-            var res = Screen.currentResolution;
-            Screen.SetResolution(res.width, res.height, false);
+            Screen.fullScreenMode = Screen.fullScreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
         }
         
         public void cb_MuteMusic()
         {
-            IsMuted = !IsMuted;
-            AudioListener.pause = IsMuted;
+            _isMuted = !_isMuted;
+            AudioListener.pause = _isMuted;
             
             slider.enabled = toggle.isOn;
         }

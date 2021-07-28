@@ -43,11 +43,9 @@ namespace Menu
         public void cb_FullScreen(bool isFullScreen)
         {
             Screen.fullScreen = isFullScreen;
-            if (isFullScreen) return;
-            var res = Screen.currentResolution;
-            Screen.SetResolution(res.width, res.height, false);
+            Screen.fullScreenMode = isFullScreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
         }
-        
+
         public void cb_MuteMusic()
         {
             _isMuted = !_isMuted;
