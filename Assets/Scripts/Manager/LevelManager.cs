@@ -4,8 +4,14 @@ namespace Manager
 {
     public class LevelManager : MonoBehaviour
     {
+        #region FIELDS
+
         public static LevelManager Instance;
         [SerializeField] private AudioSource audioSource;
+        
+        #endregion
+
+        #region UNITYMETHODS
 
         private void Awake()
         {
@@ -20,6 +26,10 @@ namespace Manager
             }
         }
 
+        #endregion
+
+        #region METHODS
+
         public void GameOver()
         {
             var ui = GetComponent<UIManager>();
@@ -28,5 +38,8 @@ namespace Manager
             Time.timeScale = 0f;
             audioSource.volume = 0;
         }
+
+        #endregion
+        
     }
 }
