@@ -55,9 +55,7 @@ namespace Controller
         #endregion
 
         #region METHODS
-
-        /// <summary>
-        /// </summary>
+        
         private void Follow()
         {
             var position = transform.position;
@@ -71,9 +69,7 @@ namespace Controller
                 _target.transform.position, movementSpeed * Time.deltaTime);
             transform.position = position;
         }
-
-        /// <summary>
-        /// </summary>
+        
         private void BackToThePoint()
         {
             var position = defaultPosition.position;
