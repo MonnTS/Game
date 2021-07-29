@@ -87,7 +87,8 @@ namespace Controller
                 movementSpeed * Time.deltaTime);
             transform.position = positionT;
 
-            if (Vector3.Distance(transform.position, defaultPosition.position) == 0) _animator.SetBool(IsMoving, false);
+            if (Vector3.Distance(transform.position, defaultPosition.position) == 0) 
+                _animator.SetBool(IsMoving, false);
         }
 
         #endregion

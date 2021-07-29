@@ -11,7 +11,7 @@ namespace Combat
         private PlayerData _playerData;
         
         [SerializeField] private int enemyDamage = 10;
-        [SerializeField] private float attackRate = 2.0f;
+        [SerializeField] private float attackRate = 1.5f;
         
         private bool _isInCollision;
         
@@ -33,11 +33,10 @@ namespace Combat
             
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
-            attackRate = 2f;
+            attackRate = 1.5f;
             animator.SetTrigger(Attack);
         }
 
-        // TODO: Death Screen
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.collider.CompareTag("Player")) return;

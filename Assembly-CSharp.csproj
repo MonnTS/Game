@@ -66,9 +66,8 @@
      <Compile Include="Assets\Scripts\Data\BossData.cs" />
      <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
-     <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />
-     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
      <Compile Include="Assets\Scripts\Menu\DeathMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />

@@ -73,7 +73,7 @@ namespace Menu
         public void btn_ExitToMainMenu()
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Scenes/MainMenu");
         }
         
         //TODO: Fix a bug which causes impossible to switch back to fullscreen mode. 

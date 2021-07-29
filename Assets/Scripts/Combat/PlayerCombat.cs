@@ -12,7 +12,7 @@ namespace Combat
         public LayerMask enemyLayer;
 
         [SerializeField] private float attackRange = 0.5f;
-        [SerializeField] private float attackRate = 2f;
+        [SerializeField] private float attackRate = 1.5f;
         [SerializeField] private int attackDamage = 15;
         private float _nextAttackTime;
 

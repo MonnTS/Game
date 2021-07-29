@@ -1,6 +1,7 @@
 using Manager;
 using UnityEngine;
 
+
 namespace Data
 {
     public class PlayerData : MonoBehaviour
@@ -9,6 +10,7 @@ namespace Data
         
         [SerializeField] private int currentHealth;
         [SerializeField] private int maxHealth = 10;
+        private PlayerManager _playerManager;
 
         #endregion
 
@@ -16,6 +18,7 @@ namespace Data
         
         private void Start()
         {
+            _playerManager = FindObjectOfType<PlayerManager>();
             currentHealth = maxHealth;
         }
 
@@ -33,8 +36,7 @@ namespace Data
 
         private void Death()
         {
-            LevelManager.Instance.GameOver();
-            gameObject.SetActive(false);
+            _playerManager.Death();
         }
 
         #endregion
