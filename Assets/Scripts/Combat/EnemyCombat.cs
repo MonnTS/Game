@@ -5,15 +5,21 @@ namespace Combat
 {
     public class EnemyCombat : MonoBehaviour
     {
+        #region FIELDS
+
         public Animator animator;
         private PlayerData _playerData;
-        
+
         [SerializeField] private int enemyDamage = 10;
         [SerializeField] private float attackRate = 1.5f;
-        
+
         private bool _isInCollision;
-        
+
         private static readonly int Attack = Animator.StringToHash("Attack");
+
+        #endregion
+
+        #region UNITYMETHOS
 
         private void Start()
         {
@@ -24,7 +30,7 @@ namespace Combat
         {
             if (!_isInCollision) return;
             attackRate -= Time.deltaTime;
-            
+
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
             attackRate = 1.5f;
@@ -42,5 +48,7 @@ namespace Combat
         {
             _isInCollision = true;
         }
+
+        #endregion
     }
 }

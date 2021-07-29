@@ -1,13 +1,12 @@
 using Manager;
 using UnityEngine;
 
-
 namespace Data
 {
     public class PlayerData : MonoBehaviour
     {
         #region FIELDS
-        
+
         [SerializeField] private int currentHealth;
         [SerializeField] private int maxHealth = 10;
         private PlayerManager _playerManager;
@@ -15,7 +14,7 @@ namespace Data
         #endregion
 
         #region UNITYMETHODS
-        
+
         private void Start()
         {
             _playerManager = FindObjectOfType<PlayerManager>();
@@ -23,15 +22,14 @@ namespace Data
         }
 
         #endregion
-
+        
         #region METHODS
 
         public void TakeDamage(int damage)
         {
             currentHealth -= damage;
 
-            if (currentHealth > 0) return;
-            Death();
+            if (currentHealth <= 0) Death();
         }
 
         private void Death()

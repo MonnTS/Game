@@ -1,22 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Menu
 {
     public class Menu : MonoBehaviour
     {
-        #region FIELDS
-
-        public AudioMixer audioMixer;
-        public Slider slider;
-        public Toggle toggle;
-        
-        private bool _isMuted; 
-
-        #endregion
-
         #region UNITYMETHODS
 
         private void Start()
@@ -25,7 +15,17 @@ namespace Menu
         }
 
         #endregion
-        
+
+        #region FIELDS
+
+        public AudioMixer audioMixer;
+        public Slider slider;
+        public Toggle toggle;
+
+        private bool _isMuted;
+
+        #endregion
+
         #region METHODS
 
         public void btn_Play()
@@ -48,7 +48,7 @@ namespace Menu
         {
             _isMuted = !_isMuted;
             AudioListener.pause = _isMuted;
-            
+
             slider.enabled = toggle.isOn;
         }
 

@@ -5,7 +5,7 @@ namespace Controller
     public class PlayerController : MonoBehaviour
     {
         #region FIELDS
-        
+
         private Vector2 _movement;
         public Animator animator;
         public Rigidbody2D rigidBody;
@@ -20,7 +20,7 @@ namespace Controller
 
         #region UNITYMETHODS
 
-        public void Update()
+        private void Update()
         {
             _movement.x = Input.GetAxisRaw("Horizontal");
             _movement.y = Input.GetAxisRaw("Vertical");
@@ -31,7 +31,7 @@ namespace Controller
             animator.SetFloat(Speed, _movement.sqrMagnitude);
         }
 
-        public void FixedUpdate()
+        private void FixedUpdate()
         {
             rigidBody.MovePosition(rigidBody.position + _movement * (movementSpeed * Time.fixedDeltaTime));
         }

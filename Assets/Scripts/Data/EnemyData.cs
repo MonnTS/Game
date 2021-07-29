@@ -5,12 +5,12 @@ namespace Data
     public class EnemyData : MonoBehaviour
     {
         #region FIELDS
-        
+
         [SerializeField] private int currentHealth;
         [SerializeField] private int enemyHealth = 100;
-        
+
         #endregion
-        
+
         #region UNITYMETHODS
 
         private void Start()
@@ -19,9 +19,9 @@ namespace Data
         }
 
         #endregion
-
-        #region METHODS
         
+        #region METHODS
+
         public void Damage(int damage)
         {
             currentHealth -= damage;

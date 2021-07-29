@@ -11,16 +11,16 @@ namespace Manager
         [SerializeField] private float musicVolume = 1f;
 
         #endregion
-
-        #region UNITYMETHODS
         
+        #region UNITYMETHODS
+
         private void Update()
         {
             audioSource.volume = musicVolume;
         }
 
         #endregion
-        
+
         #region METHODS
 
         public void UpdateVolume(float volume)

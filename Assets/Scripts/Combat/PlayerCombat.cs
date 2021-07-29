@@ -17,9 +17,9 @@ namespace Combat
         private float _nextAttackTime;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
-        
+
         #endregion
-        
+
         #region UNITYMETHODS
 
         private void Update()
@@ -43,7 +43,7 @@ namespace Combat
         #endregion
         
         #region METHODS
-        
+
         private void Combat()
         {
             animator.SetTrigger(Attack);

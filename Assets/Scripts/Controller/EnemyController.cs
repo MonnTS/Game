@@ -9,7 +9,7 @@ namespace Controller
         private Animator _animator;
         private Transform _target;
         public Transform defaultPosition;
-        
+
         [SerializeField] private float movementSpeed;
         [SerializeField] private float maxRange;
         [SerializeField] private float minRange;
@@ -87,7 +87,7 @@ namespace Controller
                 movementSpeed * Time.deltaTime);
             transform.position = positionT;
 
-            if (Vector3.Distance(transform.position, defaultPosition.position) == 0) 
+            if (Vector3.Distance(transform.position, defaultPosition.position) == 0)
                 _animator.SetBool(IsMoving, false);
         }
 
