@@ -25,6 +25,7 @@ namespace Manager
             var ui = GetComponent<UIManager>();
             if (ui == null) return;
             ui.ToggleDeathPanel();
+            Time.timeScale = 0f;
             audioSource.volume = 0;
         }
     }
