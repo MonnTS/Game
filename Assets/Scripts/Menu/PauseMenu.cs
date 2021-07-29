@@ -76,9 +76,9 @@ namespace Menu
             SceneManager.LoadScene("MainMenu");
         }
         
+        //TODO: Fix a bug which causes impossible to switch back to fullscreen mode. 
         public void cb_FullScreen(bool isFullScreen)
         {
-            Screen.fullScreen = isFullScreen;
             Screen.fullScreenMode = Screen.fullScreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
         }
         

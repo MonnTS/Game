@@ -36,13 +36,11 @@ namespace Menu
 
         public void btn_Exit()
         {
-            Debug.Log("Yes");
             Application.Quit();
         }
 
         public void cb_FullScreen(bool isFullScreen)
         {
-            Screen.fullScreen = isFullScreen;
             Screen.fullScreenMode = isFullScreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
         }
 

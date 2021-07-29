@@ -1,5 +1,5 @@
+using Manager;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Data
 {
@@ -28,12 +28,14 @@ namespace Data
             currentHealth -= damage;
 
             if (currentHealth > 0) return;
-            
-            gameObject.SetActive(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Death();
         }
-        
-        public void Death(){}
+
+        private void Death()
+        {
+            LevelManager.Instance.GameOver();
+            gameObject.SetActive(false);
+        }
 
         #endregion
     }
