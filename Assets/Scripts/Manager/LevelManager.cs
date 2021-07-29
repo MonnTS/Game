@@ -36,7 +36,7 @@ namespace Manager
             if (ui == null) return;
             ui.ToggleDeathPanel();
             Time.timeScale = 0f;
-            audioSource.volume = 0;
+            audioSource.volume = 0f;
         }
 
         #endregion
