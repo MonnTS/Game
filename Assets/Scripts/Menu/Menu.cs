@@ -7,15 +7,6 @@ namespace Menu
 {
     public class Menu : MonoBehaviour
     {
-        #region UNITYMETHODS
-
-        private void Start()
-        {
-            _isMuted = false;
-        }
-
-        #endregion
-
         #region FIELDS
 
         public AudioMixer audioMixer;
@@ -25,7 +16,16 @@ namespace Menu
         private bool _isMuted;
 
         #endregion
+        
+        #region UNITYMETHODS
 
+        private void Start()
+        {
+            _isMuted = false;
+        }
+
+        #endregion
+        
         #region METHODS
 
         public void btn_Play()
