@@ -28,10 +28,6 @@ namespace Controller
 
             // Find the player by his script.
             _target = FindObjectOfType<PlayerController>().transform;
-
-            movementSpeed = 2.0f;
-            maxRange = 5.0f;
-            minRange = 1.0f;
         }
 
         private void Update()
@@ -81,6 +77,7 @@ namespace Controller
 
             positionT = Vector3.MoveTowards(positionT, position,
                 movementSpeed * Time.deltaTime);
+            
             transform.position = positionT;
 
             if (Vector3.Distance(transform.position, defaultPosition.position) == 0)

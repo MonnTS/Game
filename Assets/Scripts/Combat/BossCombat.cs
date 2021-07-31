@@ -7,13 +7,13 @@ namespace Combat
     {
         #region FIELDS
 
-        [SerializeField] private Animator animator;
+        public Animator animator;
         private PlayerData _playerData;
 
         [SerializeField] private int enemyDamage = 10;
         [SerializeField] private float attackRate = 1.5f;
 
-        private bool _isInCollision;
+        private static bool _isInCollision;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
 
@@ -44,9 +44,16 @@ namespace Combat
             _playerData.TakeDamage(enemyDamage);
         }
 
-        private void OnCollisionStay2D()
+        private void OnCollisionStay2D(Collision2D other)
         {
+            if(!other.collider.CompareTag("Player")) return;
             _isInCollision = true;
+        }
+
+        private void OnCollisionExit2D(Collision2D other)
+        {
+            if(!other.collider.CompareTag("Player")) return;
+            _isInCollision = false;
         }
 
         #endregion
