@@ -9,20 +9,11 @@ namespace Menu
     {
         #region FIELDS
 
-        public AudioMixer audioMixer;
-        public Slider slider;
-        public Toggle toggle;
+        [SerializeField] private AudioMixer audioMixer;
+        [SerializeField] private Slider slider;
+        [SerializeField] private Toggle toggle;
 
-        private bool _isMuted;
-
-        #endregion
-        
-        #region UNITYMETHODS
-
-        private void Start()
-        {
-            _isMuted = false;
-        }
+        private static bool _isMuted;
 
         #endregion
         

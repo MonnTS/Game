@@ -12,12 +12,13 @@ namespace Menu
         private static bool _isPlaying;
         private static bool _isMuted;
 
-        public GameObject pauseMenu;
-        public GameObject player;
-        public GameObject settingsMenu;
+        [SerializeField] private GameObject pauseMenu;
+        [SerializeField] private GameObject player;
+        [SerializeField] private GameObject settingsMenu;
 
-        public Slider slider;
-        public Toggle toggle;
+        [SerializeField] private Slider slider;
+        [SerializeField] private Toggle toggle;
+        
         private PlayerController _playerController;
 
         #endregion

@@ -7,9 +7,9 @@ namespace Combat
     {
         #region FIELDS
 
-        public Animator animator;
-        public Transform attackPoint;
-        public LayerMask enemyLayer;
+        [SerializeField] private Animator animator;
+        [SerializeField] private Transform attackPoint;
+        [SerializeField] private LayerMask enemyLayer;
 
         [SerializeField] private float attackRange = 0.5f;
         [SerializeField] private float attackRate = 1.5f;

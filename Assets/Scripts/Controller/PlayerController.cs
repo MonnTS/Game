@@ -7,8 +7,8 @@ namespace Controller
         #region FIELDS
 
         private Vector2 _movement;
-        public Animator animator;
-        public Rigidbody2D rigidBody;
+        [SerializeField] private Animator animator;
+        [SerializeField] private Rigidbody2D rigidBody;
 
         [SerializeField] private float movementSpeed = 5.0f;
 

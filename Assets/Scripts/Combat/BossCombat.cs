@@ -7,7 +7,7 @@ namespace Combat
     {
         #region FIELDS
 
-        public Animator animator;
+        [SerializeField] private Animator animator;
         private PlayerData _playerData;
 
         [SerializeField] private int enemyDamage = 10;

@@ -6,7 +6,7 @@ namespace Manager
     {
         #region FIELDS
 
-        public AudioSource audioSource;
+        [SerializeField] private AudioSource audioSource;
 
         [SerializeField] private float musicVolume = 1f;
 
