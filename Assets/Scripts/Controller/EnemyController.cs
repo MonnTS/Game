@@ -25,8 +25,6 @@ namespace Controller
         private void Start()
         {
             _animator = GetComponent<Animator>();
-
-            // Find the player by his script.
             _target = FindObjectOfType<PlayerController>().transform;
         }
 
@@ -45,7 +43,8 @@ namespace Controller
             if (Vector3.Distance(_target.position, transform.position) <= maxRange
                 && Vector3.Distance(_target.position, transform.position) >= minRange)
                 Follow();
-            else if (Vector3.Distance(_target.position, transform.position) >= maxRange) BackToThePoint();
+            else if (Vector3.Distance(_target.position, transform.position) >= maxRange) 
+                BackToThePoint();
         }
 
         #endregion
@@ -57,10 +56,10 @@ namespace Controller
             var position = transform.position;
             var positionE = _target.position;
 
+            _animator.SetBool(IsMoving, true);
             _animator.SetFloat(Horizontal, positionE.x - position.x);
             _animator.SetFloat(Vertical, positionE.y - position.y);
-            _animator.SetBool(IsMoving, true);
-
+            
             position = Vector3.MoveTowards(position,
                 _target.transform.position, movementSpeed * Time.deltaTime);
             transform.position = position;
@@ -80,7 +79,7 @@ namespace Controller
             
             transform.position = positionT;
 
-            if (Vector3.Distance(transform.position, defaultPosition.position) == 0)
+            if (Vector3.Distance(transform.position, defaultPosition.position) <= 0)
                 _animator.SetBool(IsMoving, false);
         }
 
