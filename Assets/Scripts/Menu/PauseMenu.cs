@@ -15,6 +15,7 @@ namespace Menu
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject settingsMenu;
+        [SerializeField] private Toggle fullScreenToggle;
 
         [SerializeField] private Slider slider;
         [SerializeField] private Toggle toggle;
@@ -79,10 +80,9 @@ namespace Menu
             SceneManager.LoadScene("Scenes/MainMenu");
         }
 
-        //TODO: Fix a bug which causes impossible to switch back to fullscreen mode. 
-        public void cb_FullScreen(bool isFullScreen)
+        public void cb_FullScreen()
         {
-            Screen.fullScreenMode = Screen.fullScreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
+            Screen.fullScreenMode = fullScreenToggle.isOn ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
         }
 
         public void cb_MuteMusic()

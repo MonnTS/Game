@@ -7,7 +7,7 @@ namespace Combat
     {
         #region FIELDS
 
-        public Animator animator;
+        private Animator _animator;
         private PlayerData _playerData;
 
         [SerializeField] private int enemyDamage = 10;
@@ -23,6 +23,7 @@ namespace Combat
 
         private void Start()
         {
+            _animator = FindObjectOfType<Animator>();
             _playerData = FindObjectOfType<PlayerData>();
         }
 
@@ -33,8 +34,7 @@ namespace Combat
 
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
-            attackRate = 1.5f;
-            animator.SetTrigger(Attack);
+            _animator.SetTrigger(Attack);
         }
 
         private void OnCollisionEnter2D(Collision2D other)

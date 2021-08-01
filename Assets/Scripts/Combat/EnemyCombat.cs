@@ -1,4 +1,3 @@
-using System;
 using Data;
 using UnityEngine;
 
@@ -35,7 +34,6 @@ namespace Combat
 
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
-            attackRate = 1.5f;
             _animator.SetTrigger(Attack);
         }
 

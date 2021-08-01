@@ -8,7 +8,7 @@ namespace Data
         #region FIELDS
 
         [SerializeField] private int currentHealth;
-        [SerializeField] private int maxHealth = 10;
+        [SerializeField] private int maxHealth = 100;
         private PlayerManager _playerManager;
 
         #endregion
