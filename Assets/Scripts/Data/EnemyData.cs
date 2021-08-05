@@ -19,21 +19,15 @@ namespace Data
         }
 
         #endregion
-        
+
         #region METHODS
 
         public void Damage(int damage)
         {
             currentHealth -= damage;
 
-            if (currentHealth <= 0) Death();
+            if (currentHealth <= 0) Destroy(gameObject);
         }
-
-        private void Death()
-        {
-            Destroy(gameObject);
-        }
-
         #endregion
     }
 }

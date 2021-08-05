@@ -6,6 +6,7 @@ namespace Controller
     {
         #region FIELDS
 
+#pragma warning disable 0649
         private Animator _animator;
         private Transform _target;
         public Transform defaultPosition;
@@ -17,6 +18,7 @@ namespace Controller
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
+#pragma warning restore 0649
 
         #endregion
 
@@ -43,14 +45,14 @@ namespace Controller
             if (Vector3.Distance(_target.position, transform.position) <= maxRange
                 && Vector3.Distance(_target.position, transform.position) >= minRange)
                 Follow();
-            else if (Vector3.Distance(_target.position, transform.position) >= maxRange) 
+            else if (Vector3.Distance(_target.position, transform.position) >= maxRange)
                 BackToThePoint();
         }
 
         #endregion
 
         #region METHODS
-        
+
         private void Follow()
         {
             var position = transform.position;
@@ -59,12 +61,12 @@ namespace Controller
             _animator.SetBool(IsMoving, true);
             _animator.SetFloat(Horizontal, positionE.x - position.x);
             _animator.SetFloat(Vertical, positionE.y - position.y);
-            
+
             position = Vector3.MoveTowards(position,
                 _target.transform.position, movementSpeed * Time.deltaTime);
             transform.position = position;
         }
-        
+
         private void BackToThePoint()
         {
             var position = defaultPosition.position;
@@ -76,7 +78,7 @@ namespace Controller
 
             positionT = Vector3.MoveTowards(positionT, position,
                 movementSpeed * Time.deltaTime);
-            
+
             transform.position = positionT;
 
             if (Vector3.Distance(transform.position, defaultPosition.position) <= 0)

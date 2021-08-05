@@ -11,7 +11,7 @@ namespace Menu
 
         private static bool _isPlaying;
         private static bool _isMuted;
-
+#pragma warning disable 0649
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject settingsMenu;
@@ -21,7 +21,8 @@ namespace Menu
         [SerializeField] private Toggle toggle;
         
         private PlayerController _playerController;
-
+#pragma warning restore 0649
+        
         #endregion
 
         #region UNITYMETHODS

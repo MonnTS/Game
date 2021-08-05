@@ -6,6 +6,7 @@ namespace Controller
     {
         #region FIELDS
 
+#pragma warning disable 0649
         private Vector2 _movement;
         [SerializeField] private Animator animator;
         [SerializeField] private Rigidbody2D rigidBody;
@@ -15,6 +16,7 @@ namespace Controller
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int Speed = Animator.StringToHash("Speed");
+#pragma warning restore 0649
 
         #endregion
 

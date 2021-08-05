@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 
 namespace Data
@@ -7,33 +8,27 @@ namespace Data
         #region FIELDS
 
         [SerializeField] private int currentHealth;
-        [SerializeField] private int bossHealth = 100;
+        private const int BossMAXHealth = 100;
 
         #endregion
-
+        
         #region UNITYMETHODS
 
         private void Start()
         {
-            currentHealth = bossHealth;
+            currentHealth = BossMAXHealth;
         }
 
         #endregion
-        
+
         #region METHODS
 
         public void Damage(int damage)
         {
             currentHealth -= damage;
 
-            if (currentHealth <= 0) Death();
+            if (currentHealth <= 0) Destroy(gameObject);
         }
-
-        private void Death()
-        {
-            Destroy(gameObject);
-        }
-
         #endregion
     }
 }

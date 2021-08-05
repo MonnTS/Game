@@ -8,15 +8,17 @@ namespace Menu
     public class Menu : MonoBehaviour
     {
         #region FIELDS
-
+        
+#pragma warning disable 0649
         [SerializeField] private AudioMixer audioMixer;
         [SerializeField] private Slider slider;
         [SerializeField] private Toggle toggle;
 
         private static bool _isMuted;
-
-        #endregion
+#pragma warning restore 0649
         
+        #endregion
+
         #region METHODS
 
         public void btn_Play()

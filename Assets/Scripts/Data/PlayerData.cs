@@ -7,8 +7,8 @@ namespace Data
     {
         #region FIELDS
 
-        [SerializeField] private int currentHealth;
-        [SerializeField] private int maxHealth = 100;
+        public static int CurrentHealth;
+        public const int PlayerMAXHealth = 100;
         private PlayerManager _playerManager;
 
         #endregion
@@ -18,7 +18,7 @@ namespace Data
         private void Start()
         {
             _playerManager = FindObjectOfType<PlayerManager>();
-            currentHealth = maxHealth;
+            CurrentHealth = PlayerMAXHealth;
         }
 
         #endregion
@@ -27,9 +27,9 @@ namespace Data
 
         public void TakeDamage(int damage)
         {
-            currentHealth -= damage;
+            CurrentHealth -= damage;
 
-            if (currentHealth <= 0) Death();
+            if (CurrentHealth <= 0) Death();
         }
 
         private void Death()

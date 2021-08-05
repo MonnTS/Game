@@ -6,9 +6,11 @@ namespace Manager
     {
         #region FIELDS
 
+#pragma warning disable 0649
         [SerializeField] private AudioSource audioSource;
 
         [SerializeField] private float musicVolume = 1f;
+#pragma warning restore 0649
 
         #endregion
         

@@ -7,9 +7,10 @@ namespace Combat
     {
         #region FIELDS
 
-        [SerializeField] private Animator animator;
-        [SerializeField] private Transform attackPoint;
-        [SerializeField] private LayerMask enemyLayer;
+#pragma warning disable 0649
+        private Animator _animator;
+        private Transform _attackPoint;
+        private LayerMask _enemyLayer;
 
         [SerializeField] private float attackRange = 0.5f;
         [SerializeField] private float attackRate = 1.5f;
@@ -17,10 +18,18 @@ namespace Combat
         private float _nextAttackTime;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
+#pragma warning restore 0649
 
         #endregion
 
         #region UNITYMETHODS
+
+        private void Start()
+        {
+            _animator = FindObjectOfType<Animator>();
+            _attackPoint = GameObject.FindGameObjectWithTag("AttackPoint").transform;
+            _enemyLayer = LayerMask.GetMask("Enemies");
+        }
 
         private void Update()
         {
@@ -36,8 +45,8 @@ namespace Combat
         // Draws a white circle of hit range in unity inspector
         private void OnDrawGizmosSelected()
         {
-            if (attackPoint == null) return;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+            if (_attackPoint == null) return;
+            Gizmos.DrawWireSphere(_attackPoint.position, attackRange);
         }
 
         #endregion
@@ -46,13 +55,13 @@ namespace Combat
 
         private void Combat()
         {
-            animator.SetTrigger(Attack);
+            _animator.SetTrigger(Attack);
 
-            var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,
-                enemyLayer);
+            var hitEnemies = Physics2D.OverlapCircleAll(_attackPoint.position, attackRange,
+                _enemyLayer);
 
             foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
-//            foreach (var enemy in hitEnemies) enemy.GetComponent<BossData>().Damage(attackDamage);
+            foreach (var enemy in hitEnemies) enemy.GetComponent<BossData>().Damage(attackDamage);
         }
 
         #endregion
