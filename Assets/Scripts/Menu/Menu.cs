@@ -23,7 +23,6 @@ namespace Menu
 
         public void btn_Play()
         {
-            // Loads all scenes by index.
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
