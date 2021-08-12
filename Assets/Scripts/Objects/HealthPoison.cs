@@ -7,7 +7,7 @@ namespace Objects
     {
         #region FIELDS
 
-        private static int _currentValue;
+        private int _currentValue;
         private int _maxValue;
 
         #endregion
