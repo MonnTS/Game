@@ -66,11 +66,13 @@
      <Compile Include="Assets\Scripts\Data\BossData.cs" />
      <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\Manager\HeartManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />
      <Compile Include="Assets\Scripts\Menu\DeathMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Objects\AttackRange.cs" />
      <Compile Include="Assets\Scripts\Objects\HealthPoison.cs" />
      <Compile Include="Assets\Scripts\Objects\Weapon.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

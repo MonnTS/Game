@@ -7,7 +7,7 @@ namespace Data
         #region FIELDS
 
         [SerializeField] private int currentHealth;
-        [SerializeField] private int enemyHealth = 100;
+        [SerializeField] private int enemyHealth = 2;
 
         #endregion
 

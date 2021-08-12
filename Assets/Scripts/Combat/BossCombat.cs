@@ -10,7 +10,7 @@ namespace Combat
         private Animator _animator;
         private PlayerData _playerData;
 
-        [SerializeField] private int enemyDamage = 10;
+        [SerializeField] private int enemyDamage = 2;
         [SerializeField] private float attackRate = 1.5f;
 
         private static bool _isInCollision;

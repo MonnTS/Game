@@ -8,7 +8,7 @@ namespace Data
         #region FIELDS
 
         [SerializeField] private int currentHealth;
-        private const int BossMAXHealth = 100;
+        private const int BossMAXHealth = 5;
 
         #endregion
         

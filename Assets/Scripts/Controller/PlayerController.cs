@@ -10,7 +10,6 @@ namespace Controller
         private Vector2 _movement;
         [SerializeField] private Animator animator;
         [SerializeField] private Rigidbody2D rigidBody;
-
         [SerializeField] private float movementSpeed = 5.0f;
 
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");

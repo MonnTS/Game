@@ -8,7 +8,7 @@ namespace Data
         #region FIELDS
 
         public static int CurrentHealth;
-        public const int PlayerMAXHealth = 100;
+        public const int PlayerMAXHealth = 10;
         private PlayerManager _playerManager;
 
         #endregion
