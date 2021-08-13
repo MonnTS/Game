@@ -19,10 +19,10 @@ namespace Menu
 
         [SerializeField] private Slider slider;
         [SerializeField] private Toggle toggle;
-        
+
         private PlayerController _playerController;
 #pragma warning restore 0649
-        
+
         #endregion
 
         #region UNITYMETHODS

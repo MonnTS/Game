@@ -11,7 +11,7 @@ namespace Data
         private const int BossMAXHealth = 5;
 
         #endregion
-        
+
         #region UNITYMETHODS
 
         private void Start()
@@ -29,6 +29,7 @@ namespace Data
 
             if (currentHealth <= 0) Destroy(gameObject);
         }
+
         #endregion
     }
 }

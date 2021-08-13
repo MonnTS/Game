@@ -22,7 +22,7 @@ namespace Data
         }
 
         #endregion
-        
+
         #region METHODS
 
         public void TakeDamage(int damage)

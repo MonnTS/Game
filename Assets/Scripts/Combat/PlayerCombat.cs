@@ -31,7 +31,6 @@ namespace Combat
 
         private void Update()
         {
-            
             if (!(Time.time >= _nextAttackTime)) return;
             if (!Input.GetMouseButtonDown(0)) return;
 
@@ -39,16 +38,16 @@ namespace Combat
 
             _nextAttackTime = Time.time + 1f / attackRate;
         }
-        
+
         #endregion
         
         #region METHODS
-        
+
         private void Combat()
         {
             _animator.SetTrigger(Attack);
 
-            var hitEnemies = Physics2D.OverlapCircleAll(AttackRange.AttackPoint.position, 
+            var hitEnemies = Physics2D.OverlapCircleAll(AttackRange.AttackPoint.position,
                 AttackRange.Range,
                 _enemyLayer);
 
@@ -56,6 +55,8 @@ namespace Combat
             //TODO: Fix a bug that cause to hit without cd if there is no boss.
             //foreach (var enemy in hitEnemies) enemy.GetComponent<BossData>().Damage(attackDamage);
         }
+
         #endregion
+
     }
 }

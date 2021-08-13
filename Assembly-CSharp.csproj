@@ -70,7 +70,9 @@
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />
      <Compile Include="Assets\Scripts\Menu\DeathMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu.cs">
+       <DependentUpon>DeathMenu.cs</DependentUpon>
+     </Compile>
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Objects\AttackRange.cs" />
      <Compile Include="Assets\Scripts\Objects\HealthPoison.cs" />

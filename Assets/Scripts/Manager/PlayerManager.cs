@@ -13,7 +13,7 @@ namespace Manager
 #pragma warning restore 0649
 
         #endregion
-        
+
         #region METHODS
 
         public void Death()

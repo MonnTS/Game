@@ -6,6 +6,7 @@ namespace Combat
     public class BossCombat : MonoBehaviour
     {
         #region FIELDS
+
 #pragma warning disable 0649
         private Animator _animator;
         private PlayerData _playerData;
@@ -17,6 +18,7 @@ namespace Combat
 
         private static readonly int Attack = Animator.StringToHash("Attack");
 #pragma warning restore 0649
+
         #endregion
 
         #region UNITYMETHODS

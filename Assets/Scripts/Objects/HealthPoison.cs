@@ -28,7 +28,7 @@ namespace Objects
             PlayerData.CurrentHealth += healthUp;
             Destroy(gameObject);
         }
-        
+
         #endregion
     }
 }
