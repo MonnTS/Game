@@ -2853,8 +2853,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6333577b4c8844869e0d08b217142722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 1667690445}
+  player: {fileID: 536445830}
+  pauseMenu: {fileID: 0}
+  victoryMenu: {fileID: 0}
 --- !u!4 &793869694
 Transform:
   m_ObjectHideFlags: 0
