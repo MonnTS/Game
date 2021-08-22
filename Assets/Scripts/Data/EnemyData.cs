@@ -8,10 +8,16 @@ namespace Data
 
         [SerializeField] private int currentHealth;
         [SerializeField] private int enemyHealth = 2;
+        public static int Count = 0;
 
         #endregion
 
         #region UNITYMETHODS
+
+        private void Awake()
+        {
+            Count++;
+        }
 
         private void Start()
         {
@@ -26,7 +32,12 @@ namespace Data
         {
             currentHealth -= damage;
 
-            if (currentHealth <= 0) Destroy(gameObject);
+            if (currentHealth <= 0)
+            {
+                Count--;
+                Destroy(gameObject);
+            } 
+                
         }
 
         #endregion

@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Health
   - AttackPoint
+  - Weapon
+  - Menu
+  - Victory
   layers:
   - Default
   - TransparentFX

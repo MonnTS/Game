@@ -69,11 +69,11 @@
      <Compile Include="Assets\Scripts\Manager\HeartManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\VictoryManager.cs" />
      <Compile Include="Assets\Scripts\Menu\DeathMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu\Menu.cs">
-       <DependentUpon>DeathMenu.cs</DependentUpon>
-     </Compile>
+     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Menu\VictoryMenu.cs" />
      <Compile Include="Assets\Scripts\Objects\AttackRange.cs" />
      <Compile Include="Assets\Scripts\Objects\HealthPoison.cs" />
      <Compile Include="Assets\Scripts\Objects\Weapon.cs" />
