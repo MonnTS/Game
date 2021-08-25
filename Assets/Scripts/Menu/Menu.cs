@@ -23,6 +23,7 @@ namespace Menu
 
         public void btn_Play()
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 

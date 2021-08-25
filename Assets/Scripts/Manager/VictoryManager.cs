@@ -8,12 +8,12 @@ namespace Manager
     {
         #region FIELDS
 
-#pragma warning disable c0649
+#pragma warning disable 0649
         private PlayerController _playerController;
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject victoryMenu;
-#pragma warning restore c0649
+#pragma warning restore 0649
 
         #endregion
 
@@ -26,8 +26,9 @@ namespace Manager
 
         private void Update()
         {
-            var pi = EnemyData.Count;
-            if (pi != 0) return;
+            var enemyCounter = EnemyData.Count;
+
+            if (enemyCounter != 0) return;
 
             Time.timeScale = 0f;
             _playerController.enabled = false;
