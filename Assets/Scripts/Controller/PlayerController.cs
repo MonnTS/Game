@@ -26,7 +26,6 @@ namespace Controller
             _movement.x = Input.GetAxisRaw("Horizontal");
             _movement.y = Input.GetAxisRaw("Vertical");
 
-            // Setting data for the player's animation.
             animator.SetFloat(Horizontal, _movement.x);
             animator.SetFloat(Vertical, _movement.y);
             animator.SetFloat(Speed, _movement.sqrMagnitude);

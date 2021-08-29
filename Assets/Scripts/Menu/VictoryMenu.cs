@@ -8,9 +8,11 @@ namespace Menu
     {
         #region FIELDS
         
+#pragma warning disable 0649
         private PlayerController _playerController;
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject victoryMenu;
+#pragma warning restore 0649
         
         #endregion
 

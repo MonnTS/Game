@@ -8,8 +8,8 @@ namespace Combat
         #region FIELDS
 
 #pragma warning disable 0649
-        private Animator _animator;
         private PlayerData _playerData;
+        private Animator _animator;
 
         [SerializeField] private int enemyDamage = 1;
         [SerializeField] private float attackRate = 1.5f;
@@ -25,7 +25,6 @@ namespace Combat
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
             _playerData = FindObjectOfType<PlayerData>();
         }
 

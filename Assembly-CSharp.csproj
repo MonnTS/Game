@@ -75,6 +75,8 @@
      <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\VictoryMenu.cs" />
      <Compile Include="Assets\Scripts\Objects\AttackRange.cs" />
+     <Compile Include="Assets\Scripts\Objects\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Objects\CameraTransition.cs" />
      <Compile Include="Assets\Scripts\Objects\HealthPoison.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

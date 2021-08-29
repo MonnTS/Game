@@ -12,8 +12,12 @@ namespace Combat
         private Animator _animator;
         private LayerMask _enemyLayer;
 
-        [SerializeField] private float attackRate = 1.5f;
-        [SerializeField] private int attackDamage = 15;
+        private delegate void PlayerAttack();
+
+        private event PlayerAttack EventAttack;
+
+        [SerializeField] private float attackRate;
+        [SerializeField] private int attackDamage;
         private float _nextAttackTime;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
@@ -25,8 +29,9 @@ namespace Combat
 
         private void Start()
         {
-            _animator = FindObjectOfType<Animator>();
+            _animator = GetComponent<Animator>();
             _enemyLayer = LayerMask.GetMask("Enemies");
+            EventAttack += Combat;
         }
 
         private void Update()
@@ -34,8 +39,7 @@ namespace Combat
             if (!(Time.time >= _nextAttackTime)) return;
             if (!Input.GetMouseButtonDown(0)) return;
 
-            Combat();
-
+            EventAttack?.Invoke();
             _nextAttackTime = Time.time + 1f / attackRate;
         }
 

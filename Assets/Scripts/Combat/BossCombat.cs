@@ -8,7 +8,6 @@ namespace Combat
         #region FIELDS
 
 #pragma warning disable 0649
-        private Animator _animator;
         private PlayerData _playerData;
 
         [SerializeField] private int enemyDamage = 2;
@@ -25,7 +24,6 @@ namespace Combat
 
         private void Start()
         {
-            _animator = FindObjectOfType<Animator>();
             _playerData = FindObjectOfType<PlayerData>();
         }
 
@@ -37,7 +35,7 @@ namespace Combat
             if (!(attackRate <= 0)) return;
             _playerData.TakeDamage(enemyDamage);
             attackRate = 1.5f;
-            _animator.SetTrigger(Attack);
+            GetComponent<Animator>().SetTrigger(Attack);
         }
 
         private void OnCollisionEnter2D(Collision2D other)
