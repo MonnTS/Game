@@ -17,8 +17,14 @@ namespace Data
 
         private void Start()
         {
-            _playerManager = FindObjectOfType<PlayerManager>();
             CurrentHealth = PlayerMAXHealth;
+            _playerManager = GetComponent<PlayerManager>();
+        }
+
+        private void Update()
+        {
+            if (CurrentHealth > PlayerMAXHealth)
+                CurrentHealth = PlayerMAXHealth;
         }
 
         #endregion
@@ -28,10 +34,9 @@ namespace Data
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
-
-            if (CurrentHealth <= 0) Death();
+            if (CurrentHealth > 0) return;
+            Death();
         }
-
         private void Death()
         {
             _playerManager.Death();

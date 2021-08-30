@@ -27,9 +27,9 @@ namespace Manager
         private void Update()
         {
             var enemyCounter = EnemyData.Count;
-
+            
             if (enemyCounter != 0) return;
-
+            
             Time.timeScale = 0f;
             _playerController.enabled = false;
             pauseMenu.SetActive(false);

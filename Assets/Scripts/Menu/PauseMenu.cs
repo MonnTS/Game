@@ -38,7 +38,6 @@ namespace Menu
 
             if (_isPlaying)
                 btn_Resume();
-
             else
                 Pause();
         }
@@ -50,7 +49,7 @@ namespace Menu
         private void Pause()
         {
             pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            Time.timeScale = 0;
             _playerController.enabled = false;
             _isPlaying = true;
         }

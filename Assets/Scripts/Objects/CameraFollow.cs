@@ -18,10 +18,6 @@ namespace Objects
         private void Start()
         {
             _followSpeed = .2f;
-            maxPosition.x = -0.07f;
-            maxPosition.y = 10f;
-            minPosition.x = -0.07f;
-            minPosition.y = 10f;
         }
 
         private void LateUpdate()

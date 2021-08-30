@@ -26,6 +26,7 @@ namespace Combat
         private void Start()
         {
             _playerData = FindObjectOfType<PlayerData>();
+            _animator = GetComponent<Animator>();
         }
 
         private void Update()

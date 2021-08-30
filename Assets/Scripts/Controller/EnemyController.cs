@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Interfaces;
+using UnityEngine;
 
 namespace Controller
 {
-    public class EnemyController : MonoBehaviour
+    public class EnemyController : MonoBehaviour, IMovable
     {
         #region FIELDS
 
@@ -10,6 +11,8 @@ namespace Controller
         private Animator _animator;
         private Transform _target;
         public Transform defaultPosition;
+        
+        private PlayerController _playerController;
 
         [SerializeField] private float movementSpeed;
         [SerializeField] private float maxRange;
@@ -18,6 +21,9 @@ namespace Controller
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
+        
+        public delegate void OnPlayerDeath();
+        public event OnPlayerDeath PlayerDeathEvent;
 #pragma warning restore 0649
 
         #endregion
@@ -26,22 +32,28 @@ namespace Controller
 
         private void Start()
         {
+            PlayerDeathEvent += CanMove;
             _animator = GetComponent<Animator>();
-            _target = FindObjectOfType<PlayerController>().transform;
+            _playerController = FindObjectOfType<PlayerController>();
+            _target = _playerController.transform;
         }
 
         private void Update()
         {
-            /*
-             * If the distance is further than
-             * value of range the enemy
-             * will stop follow the player.
-             * Due to the minimum range
-             * he won't be able to push us
-             * because of his big mass,
-             * otherwise he will
-             * return to the default position.
-             */
+            if (!_playerController.enabled)
+            {
+                PlayerDeathEvent?.Invoke();
+            }
+            
+            /* If the distance is further than
+            * value of range the enemy
+            * will stop follow the player.
+            * Due to the minimum range
+            * he won't be able to push us
+            * because of his big mass,
+            * otherwise he will
+            * return to the default position.
+            */   
             if (Vector3.Distance(_target.position, transform.position) <= maxRange
                 && Vector3.Distance(_target.position, transform.position) >= minRange)
                 Follow();
@@ -85,6 +97,12 @@ namespace Controller
                 _animator.SetBool(IsMoving, false);
         }
 
+        public void CanMove()
+        {
+            enabled = false;
+            _animator.enabled = false;
+        }
+        
         #endregion
     }
 }
