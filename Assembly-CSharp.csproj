@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Data\BossData.cs" />
      <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IMovable.cs" />
      <Compile Include="Assets\Scripts\Manager\HeartManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Manager\SfxManager.cs" />
