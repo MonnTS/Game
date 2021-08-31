@@ -7403,7 +7403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &348843609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11371,8 +11371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1510084683}
-  maxPosition: {x: 0, y: 0}
-  minPosition: {x: 0, y: 0}
+  maxPosition: {x: -0.07, y: 10}
+  minPosition: {x: -0.07, y: 10}
 --- !u!1 &510184239
 GameObject:
   m_ObjectHideFlags: 0
@@ -13365,7 +13365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &904102529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16812,7 +16812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1515855475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18069,7 +18069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1766424959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19713,7 +19713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1754321210021757790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20291,7 +20291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1754321211682322121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20612,6 +20612,11 @@ PrefabInstance:
       propertyPath: menuCanvas
       value: 
       objectReference: {fileID: 8005687428870252238}
+    - target: {fileID: 5247903873114117631, guid: 67a4cb162ed835a4d8e07376db67062e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1510084673}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67a4cb162ed835a4d8e07376db67062e, type: 3}
 --- !u!1001 &5629292658499506132
@@ -21766,7 +21771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8005687427811281807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22929,7 +22934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8005687428870252239
 MonoBehaviour:
   m_ObjectHideFlags: 0

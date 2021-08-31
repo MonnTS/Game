@@ -58,7 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Combat\BossCombat.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyCombat.cs" />
      <Compile Include="Assets\Scripts\Combat\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Controller\EnemyController.cs" />

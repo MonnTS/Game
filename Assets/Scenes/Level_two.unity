@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &118881113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7329,7 +7329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &292467594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7819,7 +7819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &532065047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8456,7 +8456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &819032251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12489,7 +12489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1072289713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13702,7 +13702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1522600916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13947,8 +13947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 168294043}
-  maxPosition: {x: 0, y: 0}
-  minPosition: {x: 0, y: 0}
+  maxPosition: {x: 0.06, y: 10.02}
+  minPosition: {x: 0.06, y: 10.02}
 --- !u!1 &1572678070
 GameObject:
   m_ObjectHideFlags: 0
@@ -15393,7 +15393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &2023049945
 MonoBehaviour:
   m_ObjectHideFlags: 0

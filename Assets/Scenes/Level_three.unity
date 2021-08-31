@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 177868203}
   - component: {fileID: 177868202}
   - component: {fileID: 177868201}
+  - component: {fileID: 177868208}
   m_Layer: 8
   m_Name: Skeleton (5)
   m_TagString: Enemy
@@ -1251,7 +1252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &177868202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,7 +1330,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177868199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1399,6 +1400,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &177868208
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177868199}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00067255064, y: 0.000000057205327}
+  serializedVersion: 2
+  m_Radius: 0.1166699
 --- !u!1 &213194914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &279432408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,7 +2414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &389747627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3805,7 +3822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &603762800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4184,10 +4201,10 @@ GameObject:
   - component: {fileID: 631911517}
   - component: {fileID: 631911516}
   - component: {fileID: 631911515}
-  - component: {fileID: 631911514}
   - component: {fileID: 631911513}
   - component: {fileID: 631911512}
   - component: {fileID: 631911511}
+  - component: {fileID: 631911514}
   m_Layer: 0
   m_Name: Silver Skeleton
   m_TagString: Enemy
@@ -4218,11 +4235,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 631911509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f80ee6347d2649e9b332cace2fa27bf1, type: 3}
+  m_Script: {fileID: 11500000, guid: 20a0ade0e16555344b1a305f2e1957c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDamage: 10
-  attackRate: 1.5
+  currentHealth: 0
+  enemyHealth: 5
 --- !u!114 &631911512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4766,6 +4783,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5247903873114117620, guid: 67a4cb162ed835a4d8e07376db67062e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5247903873114117623, guid: 67a4cb162ed835a4d8e07376db67062e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4905,6 +4927,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 682214532}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &682214544
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682214533}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0026603164, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1118699
 --- !u!114 &686174636 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8636855249614396521, guid: b24d297a14b0347418bcdeef3ba7ca16,
@@ -5063,6 +5101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 5629292656937243723, guid: 7102f1670bc51154da32fd09be80ffb1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5629292656937243763, guid: 7102f1670bc51154da32fd09be80ffb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5118,6 +5161,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5629292656937243764, guid: 7102f1670bc51154da32fd09be80ffb1,
+        type: 3}
+      propertyPath: Skeleton
+      value: 
+      objectReference: {fileID: 1337393825}
     - target: {fileID: 5629292656937243765, guid: 7102f1670bc51154da32fd09be80ffb1,
         type: 3}
       propertyPath: defaultPosition
@@ -6610,7 +6658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1064045114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11099,6 +11147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1337393825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5247903873996673950, guid: 67a4cb162ed835a4d8e07376db67062e,
+    type: 3}
+  m_PrefabInstance: {fileID: 682214532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1360551190
 GameObject:
   m_ObjectHideFlags: 0
@@ -18152,7 +18206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1537720354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19149,7 +19203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 1
-  attackRate: 1.5
+  attackCoolDown: 100
 --- !u!114 &1714459091
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,53 +10,54 @@ namespace Combat
 #pragma warning disable 0649
         private PlayerData _playerData;
         private Animator _animator;
+        private GameObject _skeleton;
 
         [SerializeField] private int enemyDamage = 1;
-        [SerializeField] private float attackRate = 1.5f;
-
-        private static bool _isInCollision;
+        [SerializeField] private int attackCoolDown = 100;
+        private float _collisionRadius = 2.5f;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
+        private delegate void OnAttack();
+        private event OnAttack OnAttackEvent;
 #pragma warning restore 0649
 
         #endregion
 
-        #region UNITYMETHOS
+        #region UNITYMETHODS
 
         private void Start()
         {
+            _skeleton = gameObject;
             _playerData = FindObjectOfType<PlayerData>();
             _animator = GetComponent<Animator>();
+            OnAttackEvent += EnemyAttack;
         }
-
+        
         private void Update()
         {
-            if (!_isInCollision) return;
-            attackRate -= Time.deltaTime;
+            attackCoolDown--;
+            attackCoolDown = attackCoolDown < 0 ? 0 : attackCoolDown;
+            
+            if (IsInCollision() && attackCoolDown == 0)
+            {
+                OnAttackEvent?.Invoke();
+                attackCoolDown = 100;
+            }
+        }
 
-            if (!(attackRate <= 0)) return;
+        #endregion
+
+        #region METHODS
+
+        private void EnemyAttack()
+        {
             _playerData.TakeDamage(enemyDamage);
-            attackRate = 1.5f;
             _animator.SetTrigger(Attack);
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private bool IsInCollision()
         {
-            if (!other.collider.CompareTag("Player")) return;
-
-            _playerData.TakeDamage(enemyDamage);
-        }
-
-        private void OnCollisionStay2D(Collision2D other)
-        {
-            if (!other.collider.CompareTag("Player")) return;
-            _isInCollision = true;
-        }
-
-        private void OnCollisionExit2D(Collision2D other)
-        {
-            if (!other.collider.CompareTag("Player")) return;
-            _isInCollision = false;
+            return Vector3.Distance(_playerData.transform.position, _skeleton.transform.position) < _collisionRadius;
         }
 
         #endregion
