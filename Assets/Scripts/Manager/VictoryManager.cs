@@ -28,12 +28,13 @@ namespace Manager
         {
             var enemyCounter = EnemyData.Count;
             
-            if (enemyCounter != 0) return;
-            
-            Time.timeScale = 0f;
-            _playerController.enabled = false;
-            pauseMenu.SetActive(false);
-            victoryMenu.SetActive(true);
+            if (enemyCounter == 0)
+            {
+                Time.timeScale = 0f;
+                _playerController.enabled = false;
+                pauseMenu.SetActive(false);
+                victoryMenu.SetActive(true);
+            }
         }
 
         #endregion

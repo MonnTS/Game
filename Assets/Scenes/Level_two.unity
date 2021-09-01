@@ -167,7 +167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: -10}
   playerChange: {x: 0, y: -3.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &43105512
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -246,12 +245,12 @@ GameObject:
   m_Component:
   - component: {fileID: 118881111}
   - component: {fileID: 118881118}
-  - component: {fileID: 118881117}
   - component: {fileID: 118881116}
   - component: {fileID: 118881115}
   - component: {fileID: 118881114}
   - component: {fileID: 118881113}
   - component: {fileID: 118881112}
+  - component: {fileID: 118881117}
   m_Layer: 8
   m_Name: Skeleton (4)
   m_TagString: Enemy
@@ -357,8 +356,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &118881117
-BoxCollider2D:
+--- !u!58 &118881117
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -370,19 +369,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.00000011920929}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &118881118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -584,6 +573,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 168294032}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &168294034
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168294033}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1118699
 --- !u!4 &168294043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5247903873114117623, guid: 67a4cb162ed835a4d8e07376db67062e,
@@ -636,7 +641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 18, y: 0}
   playerChange: {x: 4, y: 0, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &223462893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7289,12 +7293,12 @@ GameObject:
   m_Component:
   - component: {fileID: 292467592}
   - component: {fileID: 292467599}
-  - component: {fileID: 292467598}
   - component: {fileID: 292467597}
   - component: {fileID: 292467596}
   - component: {fileID: 292467595}
   - component: {fileID: 292467594}
   - component: {fileID: 292467593}
+  - component: {fileID: 292467598}
   m_Layer: 8
   m_Name: Skeleton (3)
   m_TagString: Enemy
@@ -7310,7 +7314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292467591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.18, y: -2.71, z: 10.871436}
+  m_LocalPosition: {x: 37.2, y: -3.37, z: 10.871436}
   m_LocalScale: {x: 4.906976, y: 4.167769, z: 1}
   m_Children: []
   m_Father: {fileID: 1157706427}
@@ -7400,8 +7404,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &292467598
-BoxCollider2D:
+--- !u!58 &292467598
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7413,19 +7417,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.000000059604645}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &292467599
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7779,12 +7773,12 @@ GameObject:
   m_Component:
   - component: {fileID: 532065045}
   - component: {fileID: 532065052}
-  - component: {fileID: 532065051}
   - component: {fileID: 532065050}
   - component: {fileID: 532065049}
   - component: {fileID: 532065048}
   - component: {fileID: 532065047}
   - component: {fileID: 532065046}
+  - component: {fileID: 532065051}
   m_Layer: 8
   m_Name: Skeleton (5)
   m_TagString: Enemy
@@ -7890,8 +7884,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &532065051
-BoxCollider2D:
+--- !u!58 &532065051
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7903,19 +7897,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.000000059604645, y: 0.00000011920929}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &532065052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8065,7 +8049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654768606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.68, y: -3.48, z: 10.871436}
+  m_LocalPosition: {x: 37.09, y: -3.87, z: 10.871436}
   m_LocalScale: {x: 4.906976, y: 4.167769, z: 1}
   m_Children: []
   m_Father: {fileID: 1751213369}
@@ -8117,7 +8101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: 10}
   playerChange: {x: 0, y: 3.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &678265322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8416,12 +8399,12 @@ GameObject:
   m_Component:
   - component: {fileID: 819032249}
   - component: {fileID: 819032256}
-  - component: {fileID: 819032255}
   - component: {fileID: 819032254}
   - component: {fileID: 819032253}
   - component: {fileID: 819032252}
   - component: {fileID: 819032251}
   - component: {fileID: 819032250}
+  - component: {fileID: 819032255}
   m_Layer: 8
   m_Name: Skeleton (2)
   m_TagString: Enemy
@@ -8527,8 +8510,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &819032255
-BoxCollider2D:
+--- !u!58 &819032255
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8540,19 +8523,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.000000059604645}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &819032256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12410,9 +12383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c783ebdc4741ca9a66a01c12887fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraChange: {x: -17, y: 0}
+  cameraChange: {x: -18, y: 0}
   playerChange: {x: -4, y: 0, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1041950105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12449,12 +12421,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1072289711}
   - component: {fileID: 1072289718}
-  - component: {fileID: 1072289717}
   - component: {fileID: 1072289716}
   - component: {fileID: 1072289715}
   - component: {fileID: 1072289714}
   - component: {fileID: 1072289713}
   - component: {fileID: 1072289712}
+  - component: {fileID: 1072289719}
   m_Layer: 8
   m_Name: Skeleton (1)
   m_TagString: Enemy
@@ -12560,32 +12532,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &1072289717
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072289710}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
 --- !u!212 &1072289718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12637,6 +12583,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1072289719
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072289710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000023841858, y: 0.00000011920929}
+  serializedVersion: 2
+  m_Radius: 0.155
 --- !u!1 &1105919859
 GameObject:
   m_ObjectHideFlags: 0
@@ -12812,9 +12774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c783ebdc4741ca9a66a01c12887fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraChange: {x: 17, y: 0}
+  cameraChange: {x: 18, y: 0}
   playerChange: {x: 4, y: 0, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1132028256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13186,6 +13147,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 5629292656937243761, guid: 7102f1670bc51154da32fd09be80ffb1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5629292656937243763, guid: 7102f1670bc51154da32fd09be80ffb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13246,7 +13212,8 @@ PrefabInstance:
       propertyPath: defaultPosition
       value: 
       objectReference: {fileID: 1730399949}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5629292656937243761, guid: 7102f1670bc51154da32fd09be80ffb1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7102f1670bc51154da32fd09be80ffb1, type: 3}
 --- !u!4 &1198574013 stripped
 Transform:
@@ -13254,6 +13221,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1198574012}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1198574014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5629292656937243723, guid: 7102f1670bc51154da32fd09be80ffb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198574012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1198574015
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198574014}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.000000059604645}
+  serializedVersion: 2
+  m_Radius: 0.1166699
 --- !u!1001 &1313145844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13625,7 +13614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: -18, y: 0}
   playerChange: {x: -4, y: 0, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1514403936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13662,12 +13650,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1522600914}
   - component: {fileID: 1522600921}
-  - component: {fileID: 1522600920}
   - component: {fileID: 1522600919}
   - component: {fileID: 1522600918}
   - component: {fileID: 1522600917}
   - component: {fileID: 1522600916}
   - component: {fileID: 1522600915}
+  - component: {fileID: 1522600920}
   m_Layer: 8
   m_Name: Skeleton (6)
   m_TagString: Enemy
@@ -13773,8 +13761,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &1522600920
-BoxCollider2D:
+--- !u!58 &1522600920
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13786,19 +13774,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &1522600921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14126,7 +14104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: -10}
   playerChange: {x: 0, y: -4, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1624894575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14199,7 +14176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: 10}
   playerChange: {x: 0, y: 3.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1662939024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14272,7 +14248,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: -10}
   playerChange: {x: 0, y: -3.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1696079227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14413,7 +14388,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: -10}
   playerChange: {x: 0, y: -4.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1793151333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14922,6 +14896,49 @@ Transform:
   m_Father: {fileID: 1751213369}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1910438890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910438891}
+  - component: {fileID: 1910438892}
+  m_Layer: 0
+  m_Name: GameInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910438891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910438890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.228264, y: -4.77622, z: -8.1171875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910438892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910438890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b8e34144dd442aa7dda1c4ae0bdf93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923111525
 GameObject:
   m_ObjectHideFlags: 0
@@ -14968,7 +14985,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: 10}
   playerChange: {x: 0, y: 4, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &1923111528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15316,7 +15332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: 10}
   playerChange: {x: 0, y: 4.5, z: 0}
-  player: {fileID: 168294033}
 --- !u!61 &2004741311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15353,12 +15368,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2023049943}
   - component: {fileID: 2023049950}
-  - component: {fileID: 2023049949}
   - component: {fileID: 2023049948}
   - component: {fileID: 2023049947}
   - component: {fileID: 2023049946}
   - component: {fileID: 2023049945}
   - component: {fileID: 2023049944}
+  - component: {fileID: 2023049949}
   m_Layer: 8
   m_Name: Skeleton (7)
   m_TagString: Enemy
@@ -15464,8 +15479,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &2023049949
-BoxCollider2D:
+--- !u!58 &2023049949
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15477,19 +15492,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00007969886, y: -0.00097186863}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.31}
-    newSize: {x: 0.17, y: 0.31}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.17244326, y: 0.30805627}
-  m_EdgeRadius: 0
+  m_Radius: 0.1166699
 --- !u!212 &2023049950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18673,8 +18678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbdd39843c94c94ab027188b810e903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 168294033}
-  victoryMenu: {fileID: 3698928105403495455}
 --- !u!114 &3698928107000660528
 MonoBehaviour:
   m_ObjectHideFlags: 0

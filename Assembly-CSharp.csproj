@@ -62,7 +62,6 @@
      <Compile Include="Assets\Scripts\Combat\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Controller\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Data\BossData.cs" />
      <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
      <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IMovable.cs" />
@@ -78,6 +77,7 @@
      <Compile Include="Assets\Scripts\Objects\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Objects\CameraTransition.cs" />
      <Compile Include="Assets\Scripts\Objects\HealthPoison.cs" />
+     <Compile Include="Assets\Scripts\Objects\Initializer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

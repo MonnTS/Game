@@ -35,7 +35,6 @@ namespace Data
             if (currentHealth > 0) return;
             Count--;
             Destroy(gameObject);
-
         }
 
         #endregion

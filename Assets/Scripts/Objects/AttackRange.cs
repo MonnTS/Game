@@ -4,10 +4,16 @@ namespace Objects
 {
     public class AttackRange : MonoBehaviour
     {
+        #region FIELDS
+        
         public static Transform AttackPoint;
         public static float Range = 0.75f;
 
         private Vector2 _vector;
+        
+        #endregion
+
+        #region UNITYMETHODS
 
         private void Start()
         {
@@ -16,9 +22,13 @@ namespace Objects
 
         private void OnDrawGizmosSelected()
         {
-            if (AttackPoint == null) return;
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(AttackPoint.position, Range);
+            if (AttackPoint != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(AttackPoint.position, Range);
+            }
         }
+
+        #endregion
     }
 }
