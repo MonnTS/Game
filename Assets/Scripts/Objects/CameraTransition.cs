@@ -10,7 +10,6 @@ namespace Objects
         [SerializeField] private Vector2 cameraChange;
         [SerializeField] private Vector3 playerChange;
         private CameraFollow _cameraFollow;
-        [SerializeField] private GameObject player;
 #pragma warning restore 0649
 
         #endregion
@@ -24,11 +23,12 @@ namespace Objects
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (!other.collider.CompareTag("Player")) return;
-
-            _cameraFollow.minPosition += cameraChange;
-            _cameraFollow.maxPosition += cameraChange;
-            other.transform.position += playerChange;
+            if (other.collider.CompareTag("Player"))
+            {
+                _cameraFollow.minPosition += cameraChange;
+                _cameraFollow.maxPosition += cameraChange;
+                other.transform.position += playerChange;
+            }
         }
 
         #endregion
