@@ -13,7 +13,6 @@ namespace Combat
         private LayerMask _enemyLayer;
 
         private delegate void PlayerAttack();
-
         private event PlayerAttack EventAttack;
 
         [SerializeField] private float attackRate;
@@ -36,11 +35,14 @@ namespace Combat
 
         private void Update()
         {
-            if (!(Time.time >= _nextAttackTime)) return;
-            if (!Input.GetMouseButtonDown(0)) return;
-
-            EventAttack?.Invoke();
-            _nextAttackTime = Time.time + 1f / attackRate;
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (Time.time >= _nextAttackTime)
+                {
+                    EventAttack?.Invoke();
+                    _nextAttackTime = Time.time + 1f / attackRate;
+                }
+            }
         }
 
         #endregion
@@ -52,10 +54,12 @@ namespace Combat
             _animator.SetTrigger(Attack);
 
             var hitEnemies = Physics2D.OverlapCircleAll(AttackRange.AttackPoint.position,
-                AttackRange.Range,
-                _enemyLayer);
+                AttackRange.Range, _enemyLayer);
 
-            foreach (var enemy in hitEnemies) enemy.GetComponent<EnemyData>().Damage(attackDamage);
+            foreach (var enemy in hitEnemies)
+            {
+                enemy.GetComponent<EnemyData>().Damage(attackDamage);
+            }
         }
 
         #endregion

@@ -34,12 +34,17 @@ namespace Menu
 
         private void Update()
         {
-            if (!Input.GetKeyDown(KeyCode.Escape)) return;
-
-            if (_isPlaying)
-                btn_Resume();
-            else
-                Pause();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (_isPlaying)
+                {
+                    btn_Resume();
+                }
+                else
+                { 
+                    Pause();
+                }
+            }
         }
 
         #endregion
@@ -76,7 +81,6 @@ namespace Menu
 
         public void btn_ExitToMainMenu()
         {
-            Time.timeScale = 1f;
             SceneManager.LoadScene("Scenes/MainMenu");
         }
 

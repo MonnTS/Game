@@ -7,7 +7,7 @@ namespace Data
         #region FIELDS
 
         [SerializeField] private int currentHealth;
-        [SerializeField] private int enemyHealth = 2;
+        [SerializeField] private int enemyHealth;
         public static int Count;
 
         #endregion
@@ -31,10 +31,11 @@ namespace Data
         public void Damage(int damage)
         {
             currentHealth -= damage;
-
-            if (currentHealth > 0) return;
-            Count--;
-            Destroy(gameObject);
+            if (currentHealth <= 0)
+            {
+                Count--;
+                Destroy(gameObject);
+            }
         }
 
         #endregion

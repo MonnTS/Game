@@ -45,15 +45,6 @@ namespace Controller
                 PlayerDeathEvent?.Invoke();
             }
             
-            /* If the distance is further than
-            * value of range the enemy
-            * will stop follow the player.
-            * Due to the minimum range
-            * he won't be able to push us
-            * because of his big mass,
-            * otherwise he will
-            * return to the default position.
-            */   
             if (Vector3.Distance(_target.position, transform.position) <= maxRange
                 && Vector3.Distance(_target.position, transform.position) >= minRange)
                 Follow();
@@ -67,31 +58,31 @@ namespace Controller
 
         private void Follow()
         {
-            var position = transform.position;
-            var positionE = _target.position;
+            var enemyPosition = transform.position;
+            var playerPosition = _target.position;
 
             _animator.SetBool(IsMoving, true);
-            _animator.SetFloat(Horizontal, positionE.x - position.x);
-            _animator.SetFloat(Vertical, positionE.y - position.y);
+            _animator.SetFloat(Horizontal, playerPosition.x - enemyPosition.x);
+            _animator.SetFloat(Vertical, playerPosition.y - enemyPosition.y);
 
-            position = Vector3.MoveTowards(position,
+            enemyPosition = Vector3.MoveTowards(enemyPosition,
                 _target.transform.position, movementSpeed * Time.deltaTime);
-            transform.position = position;
+            transform.position = enemyPosition;
         }
 
         private void BackToThePoint()
         {
-            var position = defaultPosition.position;
-            var positionT = transform.position;
-            var positionE = positionT;
+            var defaultEnemyPosition = defaultPosition.position;
+            var enemyPosition = transform.position;
+            var position = enemyPosition;
 
-            _animator.SetFloat(Horizontal, position.x - positionE.x);
-            _animator.SetFloat(Vertical, position.y - positionE.y);
+            _animator.SetFloat(Horizontal, defaultEnemyPosition.x - position.x);
+            _animator.SetFloat(Vertical, defaultEnemyPosition.y - position.y);
 
-            positionT = Vector3.MoveTowards(positionT, position,
+            enemyPosition = Vector3.MoveTowards(enemyPosition, defaultEnemyPosition,
                 movementSpeed * Time.deltaTime);
 
-            transform.position = positionT;
+            transform.position = enemyPosition;
 
             if (Vector3.Distance(transform.position, defaultPosition.position) <= 0)
                 _animator.SetBool(IsMoving, false);

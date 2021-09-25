@@ -34,14 +34,11 @@ namespace Data
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
-            if (CurrentHealth > 0) return;
-            Death();
+            if (CurrentHealth <= 0)
+            {
+                _playerManager.Death();
+            }
         }
-        private void Death()
-        {
-            _playerManager.Death();
-        }
-
         #endregion
     }
 }
