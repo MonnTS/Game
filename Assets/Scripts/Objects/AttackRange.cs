@@ -7,13 +7,11 @@ namespace Objects
         #region FIELDS
         
         public static Transform AttackPoint;
-        public static float Range = 0.75f;
+        public const float Range = 0.75f;
 
         private Vector2 _vector;
         
         #endregion
-
-        #region UNITYMETHODS
 
         private void Start()
         {
@@ -28,7 +26,5 @@ namespace Objects
                 Gizmos.DrawWireSphere(AttackPoint.position, Range);
             }
         }
-
-        #endregion
     }
 }

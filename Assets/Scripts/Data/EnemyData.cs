@@ -4,15 +4,9 @@ namespace Data
 {
     public class EnemyData : MonoBehaviour
     {
-        #region FIELDS
-
         [SerializeField] private int currentHealth;
         [SerializeField] private int enemyHealth;
         public static int Count;
-
-        #endregion
-
-        #region UNITYMETHODS
 
         private void Awake()
         {
@@ -24,10 +18,6 @@ namespace Data
             currentHealth = enemyHealth;
         }
 
-        #endregion
-
-        #region METHODS
-
         public void Damage(int damage)
         {
             currentHealth -= damage;
@@ -37,7 +27,5 @@ namespace Data
                 Destroy(gameObject);
             }
         }
-
-        #endregion
     }
 }

@@ -13,23 +13,16 @@ namespace Manager
 #pragma warning restore 0649
 
         #endregion
-        
-        #region UNITYMETHODS
 
         private void Update()
         {
             audioSource.volume = musicVolume;
         }
-
-        #endregion
-
-        #region METHODS
-
+        
         public void UpdateVolume(float volume)
         {
             musicVolume = volume;
         }
 
-        #endregion
     }
 }

@@ -8,10 +8,9 @@ namespace Controller
         #region FIELDS
 
 #pragma warning disable 0649
-        private Animator _animator;
-        private Transform _target;
         public Transform defaultPosition;
-        
+        private Animator _animator;
+        private Transform _playerLocation;
         private PlayerController _playerController;
 
         [SerializeField] private float movementSpeed;
@@ -21,21 +20,19 @@ namespace Controller
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
-        
-        public delegate void OnPlayerDeath();
-        public event OnPlayerDeath PlayerDeathEvent;
 #pragma warning restore 0649
 
         #endregion
 
-        #region UNITYMETHODDS
-
+        public delegate void OnPlayerDeath();
+        public event OnPlayerDeath PlayerDeathEvent;
+        
         private void Start()
         {
             PlayerDeathEvent += CanMove;
             _animator = GetComponent<Animator>();
             _playerController = FindObjectOfType<PlayerController>();
-            _target = _playerController.transform;
+            _playerLocation = _playerController.transform;
         }
 
         private void Update()
@@ -45,46 +42,38 @@ namespace Controller
                 PlayerDeathEvent?.Invoke();
             }
             
-            if (Vector3.Distance(_target.position, transform.position) <= maxRange
-                && Vector3.Distance(_target.position, transform.position) >= minRange)
+            if (Vector3.Distance(_playerLocation.position, transform.position) <= maxRange 
+                && Vector3.Distance(_playerLocation.position, transform.position) >= minRange)
                 Follow();
-            else if (Vector3.Distance(_target.position, transform.position) >= maxRange)
+            else if (Vector3.Distance(_playerLocation.position, transform.position) >= maxRange)
                 BackToThePoint();
         }
-
-        #endregion
-
-        #region METHODS
 
         private void Follow()
         {
             var enemyPosition = transform.position;
-            var playerPosition = _target.position;
-
+            var playerPosition = _playerLocation.position;
+            
             _animator.SetBool(IsMoving, true);
             _animator.SetFloat(Horizontal, playerPosition.x - enemyPosition.x);
             _animator.SetFloat(Vertical, playerPosition.y - enemyPosition.y);
 
-            enemyPosition = Vector3.MoveTowards(enemyPosition,
-                _target.transform.position, movementSpeed * Time.deltaTime);
-            transform.position = enemyPosition;
+            transform.position = Vector3.MoveTowards(enemyPosition, playerPosition,
+    movementSpeed * Time.deltaTime);
         }
 
         private void BackToThePoint()
         {
             var defaultEnemyPosition = defaultPosition.position;
             var enemyPosition = transform.position;
-            var position = enemyPosition;
+            
+            _animator.SetFloat(Horizontal, defaultEnemyPosition.x - enemyPosition.x);
+            _animator.SetFloat(Vertical, defaultEnemyPosition.y - enemyPosition.y);
+            
+            transform.position = Vector3.MoveTowards(enemyPosition, defaultEnemyPosition, 
+    movementSpeed * Time.deltaTime);
 
-            _animator.SetFloat(Horizontal, defaultEnemyPosition.x - position.x);
-            _animator.SetFloat(Vertical, defaultEnemyPosition.y - position.y);
-
-            enemyPosition = Vector3.MoveTowards(enemyPosition, defaultEnemyPosition,
-                movementSpeed * Time.deltaTime);
-
-            transform.position = enemyPosition;
-
-            if (Vector3.Distance(transform.position, defaultPosition.position) <= 0)
+            if (Vector2.Distance(transform.position, defaultPosition.position) == 0)
                 _animator.SetBool(IsMoving, false);
         }
 
@@ -93,7 +82,5 @@ namespace Controller
             enabled = false;
             _animator.enabled = false;
         }
-        
-        #endregion
     }
 }

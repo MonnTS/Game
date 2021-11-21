@@ -15,24 +15,18 @@ namespace Manager
         [SerializeField] private GameObject player;
         
         private PlayerController _playerController;
-
-        public delegate void OnDeath();
-        public event OnDeath OnDeathEvent;
 #pragma warning restore 0649
 
         #endregion
 
-        #region UNITYMETHODS
+        public delegate void OnDeath();
+        public event OnDeath OnDeathEvent;
 
         private void Start()
         {
             OnDeathEvent += CanMove;
             _playerController = player.GetComponent<PlayerController>();
         }     
-
-        #endregion
-        
-        #region METHODS
 
         public void Death()
         {
@@ -46,7 +40,5 @@ namespace Manager
         {
             _playerController.enabled = false;
         }
-        
-        #endregion
     }
 }

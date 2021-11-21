@@ -19,8 +19,6 @@ namespace Menu
 
         #endregion
 
-        #region METHODS
-
         public void btn_Play()
         {
             Time.timeScale = 1f;
@@ -44,7 +42,5 @@ namespace Menu
 
             slider.enabled = toggle.isOn;
         }
-
-        #endregion
     }
 }

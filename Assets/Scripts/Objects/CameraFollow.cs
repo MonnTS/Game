@@ -13,8 +13,6 @@ namespace Objects
 
         #endregion
 
-        #region UNITYMETHODS
-
         private void Start()
         {
             _followSpeed = .2f;
@@ -33,7 +31,5 @@ namespace Objects
             cameraPosition = Vector3.Lerp(cameraPosition, targetPosition, _followSpeed);
             transform.position = cameraPosition;
         }
-
-        #endregion
     }
 }

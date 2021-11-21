@@ -5,8 +5,6 @@ namespace Menu
 {
     public class DeathMenu : MonoBehaviour
     {
-        #region METHODS
-
         public void btn_Restart()
         {
             Time.timeScale = 1f;
@@ -18,7 +16,5 @@ namespace Menu
             Time.timeScale = 1f;
             SceneManager.LoadScene("Scenes/MainMenu");
         }
-
-        #endregion
     }
 }

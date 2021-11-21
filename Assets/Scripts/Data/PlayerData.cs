@@ -5,15 +5,9 @@ namespace Data
 {
     public class PlayerData : MonoBehaviour
     {
-        #region FIELDS
-
         public static int CurrentHealth;
         public const int PlayerMAXHealth = 10;
         private PlayerManager _playerManager;
-
-        #endregion
-
-        #region UNITYMETHODS
 
         private void Start()
         {
@@ -27,10 +21,6 @@ namespace Data
                 CurrentHealth = PlayerMAXHealth;
         }
 
-        #endregion
-
-        #region METHODS
-
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
@@ -39,6 +29,5 @@ namespace Data
                 _playerManager.Death();
             }
         }
-        #endregion
     }
 }

@@ -9,12 +9,11 @@ namespace Objects
 #pragma warning disable 0649
         [SerializeField] private Vector2 cameraChange;
         [SerializeField] private Vector3 playerChange;
+
         private CameraFollow _cameraFollow;
 #pragma warning restore 0649
 
         #endregion
-
-        #region UNITYMETHODS
 
         private void Start()
         {
@@ -30,7 +29,5 @@ namespace Objects
                 other.transform.position += playerChange;
             }
         }
-
-        #endregion
     }
 }

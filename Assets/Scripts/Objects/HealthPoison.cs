@@ -12,8 +12,6 @@ namespace Objects
 
         #endregion
 
-        #region UNITYMETHODS
-
         private void Update()
         {
             _currentValue = PlayerData.CurrentHealth;
@@ -32,7 +30,5 @@ namespace Objects
                 }
             }
         }
-
-        #endregion
     }
 }

@@ -9,15 +9,14 @@ namespace Manager
         #region FIELDS
 
 #pragma warning disable 0649
-        private PlayerController _playerController;
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject victoryMenu;
+
+        private PlayerController _playerController;
 #pragma warning restore 0649
 
         #endregion
-
-        #region UNITYMETHODS
 
         private void Start()
         {
@@ -36,7 +35,5 @@ namespace Manager
                 victoryMenu.SetActive(true);
             }
         }
-
-        #endregion
     }
 }
