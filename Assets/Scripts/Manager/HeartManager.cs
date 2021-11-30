@@ -9,12 +9,11 @@ namespace Manager
         #region FIELDS
 
 #pragma warning disable 0649
-        private int _currentHealth;
-        private int _maxHealth;
-
         [SerializeField] private Image[] hearts;
         [SerializeField] private Sprite fullHeart;
         [SerializeField] private Sprite emptyHeart;
+        
+        private int _maxHealth;
 #pragma warning restore 0649
 
         #endregion
@@ -26,11 +25,11 @@ namespace Manager
 
         private void Update()
         {
-            _currentHealth = PlayerData.CurrentHealth;
+            var currentHealth = PlayerData.CurrentHealth;
 
             for (var i = 0; i < hearts.Length; i++)
             {
-                hearts[i].sprite = i < _currentHealth ? fullHeart : emptyHeart;
+                hearts[i].sprite = i < currentHealth ? fullHeart : emptyHeart;
                 hearts[i].enabled = i < _maxHealth;
             }
         }

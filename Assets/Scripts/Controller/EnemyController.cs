@@ -8,10 +8,10 @@ namespace Controller
         #region FIELDS
 
 #pragma warning disable 0649
-        public Transform defaultPosition;
         private Animator _animator;
         private Transform _playerLocation;
         private PlayerController _playerController;
+        [SerializeField] private Transform defaultPosition;
 
         [SerializeField] private float movementSpeed;
         [SerializeField] private float maxRange;
@@ -23,7 +23,7 @@ namespace Controller
 #pragma warning restore 0649
 
         #endregion
-
+        
         public delegate void OnPlayerDeath();
         public event OnPlayerDeath PlayerDeathEvent;
         
@@ -37,50 +37,47 @@ namespace Controller
 
         private void Update()
         {
-            if (!_playerController.enabled)
-            {
-                PlayerDeathEvent?.Invoke();
-            }
-            
-            if (Vector3.Distance(_playerLocation.position, transform.position) <= maxRange 
+            if (!_playerController.enabled) PlayerDeathEvent?.Invoke();
+
+            if (Vector3.Distance(_playerLocation.position, transform.position) <= maxRange
                 && Vector3.Distance(_playerLocation.position, transform.position) >= minRange)
                 Follow();
             else if (Vector3.Distance(_playerLocation.position, transform.position) >= maxRange)
                 BackToThePoint();
         }
 
+        public void CanMove()
+        {
+            enabled = false;
+            _animator.enabled = false;
+        }
+
         private void Follow()
         {
             var enemyPosition = transform.position;
             var playerPosition = _playerLocation.position;
-            
+
             _animator.SetBool(IsMoving, true);
             _animator.SetFloat(Horizontal, playerPosition.x - enemyPosition.x);
             _animator.SetFloat(Vertical, playerPosition.y - enemyPosition.y);
 
             transform.position = Vector3.MoveTowards(enemyPosition, playerPosition,
-    movementSpeed * Time.deltaTime);
+                movementSpeed * Time.deltaTime);
         }
 
         private void BackToThePoint()
         {
             var defaultEnemyPosition = defaultPosition.position;
             var enemyPosition = transform.position;
-            
+
             _animator.SetFloat(Horizontal, defaultEnemyPosition.x - enemyPosition.x);
             _animator.SetFloat(Vertical, defaultEnemyPosition.y - enemyPosition.y);
-            
-            transform.position = Vector3.MoveTowards(enemyPosition, defaultEnemyPosition, 
-    movementSpeed * Time.deltaTime);
+
+            transform.position = Vector3.MoveTowards(enemyPosition, defaultEnemyPosition,
+                movementSpeed * Time.deltaTime);
 
             if (Vector2.Distance(transform.position, defaultPosition.position) == 0)
                 _animator.SetBool(IsMoving, false);
-        }
-
-        public void CanMove()
-        {
-            enabled = false;
-            _animator.enabled = false;
         }
     }
 }

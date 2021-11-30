@@ -12,43 +12,42 @@ namespace Combat
         private Animator _animator;
         private GameObject _skeleton;
 
+        private readonly float _attackTimer = 1.5f;
+        private readonly float _collisionRadius = 2.5f;
+        private float _nextTimeAttackTime;
+
         [SerializeField] private int enemyDamage = 1;
-        [SerializeField] private int attackCoolDown = 100;
-        private float _collisionRadius = 2.5f;
+
+        private AudioSource _damageSound;
+        [SerializeField] private AudioClip clip;
 
         private static readonly int Attack = Animator.StringToHash("Attack");
-        private delegate void OnAttack();
-        private event OnAttack OnAttackEvent;
 #pragma warning restore 0649
 
         #endregion
-
-        #region UNITYMETHODS
-
+        
+        private delegate void OnAttack();
+        private event OnAttack OnAttackEvent;
+        
         private void Start()
         {
             _skeleton = gameObject;
             _playerData = FindObjectOfType<PlayerData>();
             _animator = GetComponent<Animator>();
+            _damageSound = GetComponent<AudioSource>();
             OnAttackEvent += EnemyAttack;
         }
-        
+
         private void Update()
         {
-            attackCoolDown--;
-            attackCoolDown = attackCoolDown < 0 ? 0 : attackCoolDown;
-            
-            if (IsInCollision() && attackCoolDown == 0)
+            if (Time.time >= _nextTimeAttackTime && IsInCollision())
             {
                 OnAttackEvent?.Invoke();
-                attackCoolDown = 100;
+                _damageSound.PlayOneShot(clip);
+                _nextTimeAttackTime = Time.time + 2f / _attackTimer;
             }
         }
-
-        #endregion
-
-        #region METHODS
-
+        
         private void EnemyAttack()
         {
             _playerData.TakeDamage(enemyDamage);
@@ -59,7 +58,5 @@ namespace Combat
         {
             return Vector3.Distance(_playerData.transform.position, _skeleton.transform.position) < _collisionRadius;
         }
-
-        #endregion
     }
 }

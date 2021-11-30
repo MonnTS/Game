@@ -4,10 +4,14 @@ namespace Data
 {
     public class EnemyData : MonoBehaviour
     {
-        [SerializeField] private int currentHealth;
+#pragma warning disable 0649
         [SerializeField] private int enemyHealth;
-        public static int Count;
+#pragma warning restore 0649
 
+        [SerializeField] private int currentHealth;
+
+        public static int Count { get; private set; }
+        
         private void Awake()
         {
             Count++;

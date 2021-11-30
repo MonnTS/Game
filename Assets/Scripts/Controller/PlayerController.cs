@@ -19,8 +19,6 @@ namespace Controller
 
         #endregion
 
-        #region UNITYMETHODS
-
         private void Update()
         {
             _movement.x = Input.GetAxisRaw("Horizontal");
@@ -35,7 +33,5 @@ namespace Controller
         {
             rigidBody.MovePosition(rigidBody.position + _movement * (movementSpeed * Time.fixedDeltaTime));
         }
-
-        #endregion
     }
 }

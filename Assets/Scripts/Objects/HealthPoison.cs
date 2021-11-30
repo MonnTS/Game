@@ -21,13 +21,10 @@ namespace Objects
         private void OnCollisionEnter2D(Collision2D other)
         {
             var healthUp = 5;
-            if (other.collider.CompareTag("Player"))
+            if (other.collider.CompareTag("Player") && _currentValue < _maxValue)
             {
-                if (_currentValue < _maxValue)
-                {
-                    PlayerData.CurrentHealth += healthUp;
-                    Destroy(gameObject);
-                }
+                PlayerData.CurrentHealth += healthUp;
+                Destroy(gameObject);
             }
         }
     }

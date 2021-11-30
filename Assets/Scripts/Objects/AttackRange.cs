@@ -6,7 +6,7 @@ namespace Objects
     {
         #region FIELDS
         
-        public static Transform AttackPoint;
+        public static Transform AttackPoint { get; private set; }
         public const float Range = 0.75f;
 
         private Vector2 _vector;

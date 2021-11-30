@@ -5,9 +5,12 @@ namespace Data
 {
     public class PlayerData : MonoBehaviour
     {
-        public static int CurrentHealth;
         public const int PlayerMAXHealth = 10;
+
+        private bool _isDead;
         private PlayerManager _playerManager;
+
+        public static int CurrentHealth { get; set; }
 
         private void Start()
         {
@@ -17,15 +20,16 @@ namespace Data
 
         private void Update()
         {
-            if (CurrentHealth > PlayerMAXHealth)
-                CurrentHealth = PlayerMAXHealth;
+            if (CurrentHealth > PlayerMAXHealth) CurrentHealth = PlayerMAXHealth;
         }
 
         public void TakeDamage(int damage)
         {
             CurrentHealth -= damage;
-            if (CurrentHealth <= 0)
+
+            if (CurrentHealth <= 0 && !_isDead)
             {
+                _isDead = true;
                 _playerManager.Death();
             }
         }

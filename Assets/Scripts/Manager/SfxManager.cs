@@ -23,6 +23,5 @@ namespace Manager
         {
             musicVolume = volume;
         }
-
     }
 }

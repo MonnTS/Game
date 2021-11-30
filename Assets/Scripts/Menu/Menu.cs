@@ -14,7 +14,7 @@ namespace Menu
         [SerializeField] private Slider slider;
         [SerializeField] private Toggle toggle;
 
-        private static bool _isMuted;
+        private bool _isMuted;
 #pragma warning restore 0649
 
         #endregion

@@ -10,10 +10,11 @@ namespace Manager
 
 #pragma warning disable 0649
         [SerializeField] private GameObject deathScreen;
-        [SerializeField] private AudioSource audioSource;
         [SerializeField] private GameObject menuCanvas;
         [SerializeField] private GameObject player;
-        
+        [SerializeField] private AudioClip clip;
+
+        private AudioSource _looseSound;
         private PlayerController _playerController;
 #pragma warning restore 0649
 
@@ -26,14 +27,16 @@ namespace Manager
         {
             OnDeathEvent += CanMove;
             _playerController = player.GetComponent<PlayerController>();
-        }     
+            _looseSound = GetComponent<AudioSource>();
+        }
 
         public void Death()
         {
             OnDeathEvent?.Invoke();
             deathScreen.SetActive(true);
             menuCanvas.SetActive(false);
-            audioSource.volume = 0f;
+            _looseSound.PlayOneShot(clip);
+            Time.timeScale = 0f;
         }
 
         public void CanMove()
